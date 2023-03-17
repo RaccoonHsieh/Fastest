@@ -1,0 +1,369 @@
+/* ----------- about us 第一格 ----------- */
+/* .header-6{
+    background-image: url(../img/banner/04.jpg);
+    max-width: 100%;
+    height: 600px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right top 25%;
+    margin: 0 auto;
+} */
+
+.inside-6{
+    /* border: 3px solid red; */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.topbar-6{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topbar-6 img{
+    height: 50px;
+    padding-top: 40px;
+
+}
+
+.topbar-6 ul{
+    height: 60px;
+    padding-top: 30px;
+}
+
+.topbar-6 li{
+    width: 110px;
+    float: left;
+}
+
+.topbar-6 a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 420;
+    line-height: 50px;
+}
+
+.topbar-6 a:hover{
+    border-bottom: 4px solid rgb(45, 179, 255) ;
+    /* background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 60%, rgb(226, 230, 233) 100%); */
+    color: rgb(45, 179, 255);
+}
+
+.aboutus-title-1{
+    position: absolute;
+    z-index: 2;
+    
+    right: 120px;
+    top: 300px;
+}
+
+.aboutus-title-1 h1{
+    margin-bottom: 20px;
+}
+
+.aboutus-title-1 a{
+    display: inline-block;
+    background-color: rgb(45, 179, 255);
+    width: 280px;
+    height: 90px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 26px;
+    color: white;
+    line-height: 90px;
+}
+
+.aboutus-title-1 a i{
+    margin-left: 10px;
+}
+
+.aboutus-title-1 a:hover{
+    background-color:black;
+    color: white;
+}
+
+.aboutus-img-one{
+    position: relative;
+    margin-top: 50px;
+}
+
+.aboutus-img-one img:nth-child(1){
+    position: relative;
+    height: 700px;
+}
+
+.aboutus-img-one img:nth-child(2){
+    position: absolute;
+    height: 400px;
+    right: 80px;
+    top: 650px;
+    box-shadow: 15px 15px 30px rgba(11, 13, 30, .3);
+}
+
+/* ----------- about us 第二格 ----------- */
+.aboutus-two{
+    background-image: linear-gradient(90deg, rgb(243, 243, 243) 60%, rgb(255, 255, 255) 50%);
+    max-width: 100%;
+    height: 700px;
+}
+
+.inside-6-2{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.aboutus-title-two{
+    padding-top: 100px;
+}
+
+.aboutus-title-two p{
+    color: rgb(152, 152, 152);
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    max-width: 35%;
+}
+
+.aboutus-title-two-two{
+    display: flex;
+    align-items: end;
+}
+
+.aboutus-title-two-two h2{
+    font-size: 15px;
+}
+
+.aboutus-title-two-two img{
+    height: 150px;
+    margin-left: 10px;
+}
+
+/* ----------- about us 第三格 ----------- */
+.aboutus-bgi-three{
+    background-image: 
+    linear-gradient(90deg, rgb(11, 13, 30) 30%, rgba(11, 13, 30, 0.147) 100%),
+    url(../img/backgroundimg/01.jpg);
+    max-width: 100%;
+    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+}
+
+.aboutus-img-three{
+    position: relative;
+
+}
+
+.aboutus-img-three img:nth-child(1){
+    border-left: 15px solid rgb(45, 179, 255);
+    position: absolute;
+    width: 700px;
+    z-index: 0;
+    right: 0;
+    top: -150px;
+
+}
+
+.aboutus-img-three img:nth-child(2){
+    position: absolute;
+    width: 500px;
+    z-index: 1;
+    right: 300px;
+    top: 250px;
+}
+
+.inside-6-3{
+    /* border: 3px solid red; */
+    max-width: 1200px;
+    margin: auto;   
+    padding-top: 150px; 
+}
+
+
+.aboutus-title-3{
+    display: flex;
+    flex-direction:column ;
+    color: white;
+}
+
+.aboutus-title-3 h3{
+    margin-bottom: 10px;
+    font-weight: 250;
+    letter-spacing: 13px;
+}
+
+
+.aboutus-title-3 h1{
+    margin-bottom: 20px;
+}
+
+/* .aboutus-title-3 h1 span{
+    margin-bottom: 20px;
+    color: rgb(45, 179, 255);
+} */
+
+.aboutus-title-3 p{
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    max-width: 40%;
+    margin-top: 10px;
+}
+
+.aboutus-title-3 a{
+    display: inline-block;
+    background-color: rgb(45, 179, 255);
+    width: 280px;
+    height: 90px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 26px;
+    color: white;
+    line-height: 90px;
+    margin-top: 40px;
+}
+
+.aboutus-title-3 a i{
+    margin-left: 10px;
+}
+
+.aboutus-title-3 a:hover{
+    background-color:white;
+    color: black;
+}
+
+/* ----------- about us 第四格 ----------- */
+.aboutus-four{
+    margin: 130px 0;}
+
+.inside-6-4{
+    /* border: 3px solid red; */
+    max-width: 1200px;
+    margin: 0 auto;    
+}
+
+.aboutus-title-4{
+    /* margin-top: 200px; */
+    text-align: center;
+    color: black;
+}
+
+.aboutus-title-4 h3{
+    margin-bottom: 10px;
+    font-weight: 250;
+    letter-spacing: 13px;
+}
+
+.aboutus-title-4 h1{
+    margin-bottom: 20px;
+}
+
+.aboutus-title-4 h1 span{
+    margin-bottom: 20px;
+    color: rgb(45, 179, 255);
+}
+
+.aboutus-title-4 p{
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+.about-us-img-4{
+    margin-top: 50px;
+}
+
+.about-us-img-4 img{
+    display: block;
+    height: 500px;
+    margin: 0 auto;
+}
+
+/* ----------- about us 第五格 ----------- */
+.aboutus-bgi-five{
+    background-image: 
+    linear-gradient(270deg, rgb(11, 13, 30) 30%, rgba(255, 255, 255, 0) 40%),
+    url(../img/backgroundimg/04.jpg);
+    max-width: 100%;
+    height: 700px;
+    background-size: contain;
+    background-repeat: no-repeat, no-repeat;
+}
+
+.inside-six-five{
+    /* border: 3px solid red; */
+    max-width: 1200px;
+    margin: 0 auto;    
+}
+
+.aboutus-title-five{
+    display: flex;
+    flex-direction:column ;
+    justify-content: flex-start;
+    color: white;
+    padding-top: 200px;
+}
+
+.aboutus-title-five h3{
+    margin-bottom: 10px;
+    font-weight: 250;
+    letter-spacing: 13px;
+    
+}
+
+.aboutus-title-five h1{
+    margin-bottom: 20px;
+}
+
+.aboutus-title-five h1 span{
+    margin-bottom: 20px;
+    color: rgb(45, 179, 255);
+}
+
+.aboutus-title-five p{
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    max-width: 50%;
+}
+
+.aboutus-title-five a{
+    display: inline-block;
+    background-color: rgb(45, 179, 255);
+    width: 250px;
+    height: 90px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 26px;
+    color: white;
+    line-height: 90px;
+}
+
+.aboutus-title-five a i{
+    margin-left: 10px;
+}
+
+.aboutus-title-five a:hover{
+    background-color:white;
+    color: black;
+}
+
+/* ----------- aboutus back to top ----------- */
+a.back-to-top{
+    display: block;
+    position: fixed;
+    z-index: 3;
+}
+
+.back-to-top{
+    position: fixed;
+    width: 50px;
+    right: 30px;
+    bottom: 30px;
+}

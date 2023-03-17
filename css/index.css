@@ -1,0 +1,300 @@
+/* ----------- 首頁第一格 ----------- */
+.one{
+    background-image: url(../img/banner/01.jpg);
+    max-width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: right top 25%;
+    margin: 0 auto;
+}
+
+.inside{
+    /* border: 3px solid red; */
+    max-width: 1200px;
+    margin: auto;
+}
+
+.topbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topbar img{
+    height: 50px;
+    padding-top: 40px;
+
+}
+
+.topbar ul{
+    /* border: 3px solid red; */
+    height: 60px;
+    padding-top: 30px;
+}
+
+.topbar li{
+    width: 110px;
+    float: left;
+}
+
+.topbar a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 420;
+    line-height: 50px;
+}
+
+.topbar a:hover{
+    border-bottom: 4px solid rgb(45, 179, 255) ;
+    /* background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 60%, rgb(226, 230, 233) 100%); */
+    color: rgb(45, 179, 255);
+}
+
+.title-1{
+    margin-top: 100px;
+}
+
+.title-1 h2{
+    margin-bottom: 40px;
+    color: white;
+}
+
+.title-1 a{
+    display: inline-block;
+    background-color: black;
+    width: 280px;
+    height: 90px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 26px;
+    color: white;
+    line-height: 90px;
+}
+
+.title-1 a i{
+    margin-left: 10px;
+}
+
+.title-1 a:hover{
+    background-color: #ffffff;
+    color: black;
+}
+
+
+
+/* ----------- 首頁第二格 ----------- */
+.two{
+    margin: 100px 0;
+    text-align: center;
+    font-style: normal;
+}
+
+.two h3{
+    margin-top: 10px;
+}
+
+.prod1{
+    margin-top: 110px;
+}
+
+.prod1 ul{
+    display: flex;
+    justify-content: center;
+}
+
+.prod1 ul li{
+    margin: 0 30px;
+    align-self: flex-end;
+}
+
+.prod1 ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+}
+
+.prod1 ul li a:hover{
+    color: rgb(45, 179, 255);
+}
+
+.prod1 ul li img{
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+
+/* ----------- 首頁第三格 ----------- */
+
+.third{
+    background-color: rgb(242, 242, 242);
+    max-width: 100%;
+    height: 600px;
+    padding-top: 170px;
+}
+
+.third-text{
+    min-width: 1200px;
+    background-color: white;
+    font-style: normal;
+    display: flex;
+    position: absolute;
+    right: 50%;
+    transform: translate(50%);
+}
+
+.third-text ul{
+}
+
+.third-text img{
+    width: 600px;
+}
+
+.thied-text-sub{
+    margin-left: 60px;
+}
+
+.thied-text-sub h2{
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.thied-text-sub p{
+    width: 450px;
+    margin-bottom: 50px;
+}
+
+.thied-text-sub a{
+    display: block;
+    background-color: black;
+    width: 280px;
+    height: 90px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    line-height: 90px;
+    text-align: center;
+}
+
+.thied-text-sub a i{
+    margin-left: 10px;
+}
+
+.third-text a:hover{
+    background-color: rgb(45, 179, 255);
+}
+
+/* ----------- 首頁第四格 ----------- */
+.bgi{
+    background-size: cover;
+    background-image: url(../img/backgroundimg/01.jpg);
+    background-position: bottom 50% right 40%;
+    position: relative;
+    max-width: 100%;
+    height: 400px;
+}
+
+.bgi::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 400px;
+    background-color:white;
+    opacity: .1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.location{
+    background-image: linear-gradient(270deg, rgb(10, 36, 55) 0%,rgba(255, 255, 255, 0.703) 50%, rgba(255, 255, 255, 0) 100%);
+    width: 100%;
+    height: 400px;
+}
+
+
+.location h2{
+    padding-top: 90px;
+    margin-bottom: 50px;
+    text-align: center;
+    position: relative;
+}
+
+.menu-sub{
+    max-width: 1200px;
+    /* border: 3px solid red; */
+    margin: 0 auto;
+}
+
+.menu{
+    display: flex;
+    margin-top: 120px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.menu label{
+    display: block;
+}
+
+.menu select{
+    width: 250px;
+    height: 60px;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 38px;
+    opacity: .6;
+    border: none;
+    border-radius: 5px;
+    color: rgb(99, 99, 99);
+    padding-left: 10px;
+    flex-grow: 1;
+    margin-right: 50px;
+}
+
+button{
+    display: block;
+    width: 150px;
+    height: 60px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 38px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+}
+
+button:hover{
+    background-color: rgb(45, 179, 255);
+}
+
+.map{
+    display: none;
+    text-align: center;
+    margin-top: 70px;
+}
+
+
+/* ----------- 首頁第五格 ----------- */
+
+
+/* ----------- introduce back to top ----------- */
+a.back-to-top{
+    display: block;
+    position: fixed;
+    z-index: 3;
+}
+
+.back-to-top{
+    position: fixed;
+    width: 50px;
+    right: 30px;
+    bottom: 30px;
+}

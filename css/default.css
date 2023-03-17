@@ -1,0 +1,157 @@
+@import url(reset.css);
+
+body{
+    font-family: Noto Sans CJK TC;
+    font-style: normal;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 126%;
+    letter-spacing: 0.09em;
+}
+
+h2{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 53px;
+    letter-spacing: 0.09em;
+}
+
+.h2_sub{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 126%; 
+    letter-spacing: 0.09em;
+}
+
+
+h3{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0.09em;
+}
+
+p{
+    font-weight: 350;
+    font-size: 18px;
+    line-height: 136.52%;
+    letter-spacing: 0.09em;
+}
+
+/* ----------- topbar ----------- */
+/* .topbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topbar img{
+    height: 50px;
+    margin-top: 60px;
+    margin-left: 360px;
+}
+
+.topbar ul{
+    margin-top: 50px;
+    margin-right: 360px;
+}
+
+.topbar li{
+    height: 50px;
+    width: 150px;
+    float: left;
+}
+
+.topbar a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 420;
+    line-height: 50px;
+}
+
+.topbar a:hover{
+    border-bottom: 4px solid rgb(45, 179, 255) ;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 60%, rgb(226, 230, 233) 100%);
+    color: rgb(45, 179, 255);
+} */
+
+/* ----------- footer ----------- */
+.footer{
+    background-color: rgb(22, 36, 52);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    margin-top: 150px;
+    margin-right: 100px;
+}
+
+.logo img{
+    height: 45px;
+    margin-bottom: 50px;
+}
+
+.logo li {
+    margin-bottom: 15px;
+}
+
+.logo li i{
+    font-size: 20px;
+    color: white;
+    margin-right: 15px;
+}
+
+.logo li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+}
+
+.logo li a:hover{
+    color:  rgb(45, 179, 255) ;
+}
+
+.serve-text{
+    display: flex;
+    margin-top: 130px;
+    margin-bottom: 130px;
+}
+
+.serve-text ul{
+    margin-right: 40px;
+}
+
+.serve-text li:nth-child(1){
+    font-weight: 350;
+    font-size: 18px;
+    line-height: 30px;
+    color: rgb(131, 131, 131);
+}
+
+.serve-text li{
+    margin-top: 15px;
+}
+
+.serve-text a{
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+}
+
+.serve-text a:hover{
+    color:  rgb(45, 179, 255) ;
+}

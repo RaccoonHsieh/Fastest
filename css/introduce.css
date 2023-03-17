@@ -1,0 +1,456 @@
+@import url('default.css');
+
+/* ----------- introduce 第一格 ----------- */
+.two{
+    background-image: url(../img/banner/02.jpg);
+    max-width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: right top 25%;
+    margin: 0 auto;
+}
+
+.inside-2{
+    /* border: 3px solid red; */
+    max-width: 1200px;
+    margin: auto;
+}
+
+.topbar-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topbar-2 img{
+    height: 50px;
+    padding-top: 40px;
+}
+
+.topbar-2 ul{
+    height: 60px;
+    padding-top: 30px;
+}
+
+.topbar-2 li{
+    width: 110px;
+    float: left;
+}
+
+.topbar-2 a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 420;
+    line-height: 50px;
+}
+
+.topbar-2 a:hover{
+    border-bottom: 4px solid rgb(45, 179, 255) ;
+    /* background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 60%, rgb(226, 230, 233) 100%); */
+    color: rgb(45, 179, 255);
+}
+
+.title-2{
+    margin-top: 80px;
+}
+
+.title-2 h2{
+    font-size: 50pt;
+    font-weight: 700;
+    line-height: 108.5%;
+    letter-spacing: 0.11em;
+    color: white;
+    -webkit-text-stroke: 1.5px rgb(255, 255, 255) ;
+    -webkit-text-fill-color: transparent;
+}
+
+.title-2 h1{
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 108.5%;
+    letter-spacing: 0.11em;
+    color: white;
+}
+
+/* ----------- introduce 第一格按鈕 ----------- */
+.one-button{
+    background-color: rgb(255, 255, 255);
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    /* margin: 25px 0px; */
+}
+
+.one-button h2{
+    margin-top: 55px;
+    color: rgb(0, 0, 0);
+}
+
+.one-inside-button{
+    margin-left: 50px;
+    margin-top: 30px;
+    /* margin-top: 25px; */
+}
+
+.one-inside-button a{
+    margin-left: 30px;
+    display: block;
+    float: left;
+    width: 300px;
+    height: 90px;
+    border-radius: 50px;
+    background-color: rgb(0, 0, 0);
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 37px;
+    letter-spacing: 0.09em;
+    text-align: center;
+    line-height: 90px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.one-inside-button a:hover{
+    background-color: rgb(45, 179, 255) ;
+    color: white;
+}
+
+/* ----------- introduce 第二格 ----------- */
+.two-2{
+    background-image : 
+    linear-gradient(270deg, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 60%),
+    url(../img/Function/02.jpg);
+    background-size: cover, cover;
+    background-position: right bottom, right 450px bottom -250px;
+    max-width: 100%;
+    height: 600px;
+}
+
+.two-two{
+    /* border: 3px solid red; */
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.two-2-icon{}
+
+.two-2-icon ul{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding-top: 90px;
+}
+
+.two-2-icon li{
+    margin-top: 50px;
+}
+
+.two-2-icon h3{
+    color: white;
+}
+
+.two-2-icon h3 i{
+    font-size: 70px;
+}
+
+/* ----------- introduce 第三格 ----------- */
+.aaa{
+    /* border: 3px solid red; */
+    max-width: 1200px;
+    margin: auto;
+}
+
+.two-3-text{
+    display: flex;
+    margin: 150px 0;
+    justify-content: center;
+}
+
+.two-3-text h2{
+    margin-top: 80px;
+}
+
+.two-3-text p{
+    width: 500px;
+    margin-top: 50px;
+}
+
+.two-3 img{
+    width: 600px;
+    margin-left: 100px;
+}
+
+/* ----------- introduce 第四格 ----------- */
+.bbb{
+    /* border: 3px solid red; */
+    max-width: 1200px;
+    margin: auto;
+}
+
+.two-4{
+    background-image: 
+    linear-gradient(270deg, rgb(0, 0, 0) 20%, rgba(255, 255, 255, 0) 90%),
+    url(../img/Function/04.jpg);
+    max-width: 100%;
+    height: 700px;
+    background-size: 100%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: left bottom, left -80px bottom -100px;
+}
+
+.two-4-text{
+    /* margin: 0px 360px; */
+    text-align: right;
+}
+
+.two-4-text h1{
+    -webkit-text-stroke: 1.5px rgb(255, 255, 255) ;
+    -webkit-text-fill-color: transparent;
+    font-size: 90px;
+    padding-top: 130px;
+}
+
+.two-4-text h2{
+    font-weight: 320;
+    color: white;
+    margin-top: 30px;
+    font-size: 22px;
+    line-height: 1.6;
+}
+
+/* ----------- introduce 第五格 ----------- */
+.ccc{
+    /* border: 3px solid red; */
+    max-width: 1200px;
+    margin: auto;
+}
+
+.two-5-text h1{
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    color: rgb(217, 217, 217);
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+}
+
+.two-5-img{
+    /* border: 3px solid red; */
+    background-image: url(../img/goods/04.png);
+    background-repeat: no-repeat;
+    height: 400px;
+    text-align: center;
+    margin-top: 250px;
+    margin-bottom: 80px;
+}
+
+.two-5-function ul{
+    display: flex;
+    justify-content: center;
+}
+
+.two-5-function li{
+    display: inline-block;
+    background-color: white;
+    border: 3px solid rgb(45, 179, 255);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 250px;
+    margin-right: 50px;
+}
+
+.two-5-function i{
+    font-size: 60px;
+    color:  rgb(45, 179, 255);
+}
+
+.two-5-function li i{
+    display: block;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    line-height: 110px;
+}
+
+.two-5-function-sub ul{
+}
+
+.two-5-function-sub li{
+
+}
+
+.two-5-function-sub li img{
+    width: 150px;
+}
+
+
+.two-5-function li:hover{
+    border: 3px solid rgb(208, 208, 208);
+}
+
+.two-5-function i:hover{
+    color: rgb(208, 208, 208);
+}
+
+/* ----------- introduce 第六格 ----------- */
+.ddd{
+    /* border: 3px solid red; */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.six{
+    background-color: rgb(230, 230, 230);
+    text-align: center;
+    max-width: 100%;
+    height: 950px;
+}
+
+.six-text{
+    padding-top: 100px;
+}
+
+.six-text p{
+    width: 60%;
+    margin: 10px auto;
+}
+
+.six-push{
+    margin-top: 50px;
+}
+
+.six-push a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: 0.09em;
+    color: black;
+}
+
+.six-push p{
+    width: 60%;
+    font-size: 18px;
+    margin: 0 auto;
+    color: rgb(112, 112, 112);
+}
+
+.six-push img{
+    float: left;
+    transform: rotateY(180deg);
+    width: 1000px;
+    margin-top: 100px;
+}
+
+/* ----------- introduce 第六格下面按鈕 ----------- */
+
+.six-button{
+    background-color: black;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    /* margin: 25px 0px; */
+}
+
+.six-button h2{
+    margin-top: 55px;
+    color: white;
+}
+
+.six-inside-button{
+    margin-left: 50px;
+    margin-top: 30px;
+    /* margin-top: 25px; */
+}
+
+.six-inside-button a{
+    margin-left: 30px;
+    display: block;
+    float: left;
+    width: 300px;
+    height: 90px;
+    border-radius: 50px;
+    background-color: white;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 37px;
+    letter-spacing: 0.09em;
+    text-align: center;
+    line-height: 90px;
+    color: black;
+    text-decoration: none;
+}
+
+.six-inside-button a:hover{
+    background-color: rgb(45, 179, 255) ;
+    color: white;
+}
+
+/* ----------- introduce 第七格 ----------- */
+.seven ul{
+    max-width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.seven li{
+    overflow: hidden;
+    width: 25%;
+    background-size: cover;
+    position: relative;
+}
+
+.seven li::before{
+    content: "";
+    background-image: 
+    linear-gradient(to top,  rgba(45, 179, 255,1), rgba(255, 255, 255, 0));
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.seven img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    transition: transform .4s ease-in-out;
+}
+
+.seven li  h2{
+    height: 300px;
+    position: relative;/*把自己定位為父層*/
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.seven li:hover img{
+    transform: scale(1.2);
+}
+
+/* ----------- introduce back to top ----------- */
+a.back-to-top{
+    display: block;
+    position: fixed;
+    z-index: 3;
+}
+
+.back-to-top{
+    position: fixed;
+    width: 50px;
+    right: 30px;
+    bottom: 30px;
+}

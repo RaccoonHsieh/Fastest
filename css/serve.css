@@ -1,0 +1,349 @@
+/* ----------- serve top bar ----------- */
+.seven{
+    background-image:
+    linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 40%),
+    url(../img/banner/03.jpg);
+    max-width: 100%;
+    height: 600px;
+    background-size: cover, cover;
+    background-position: right top 25%, right top 25%;
+    margin: 0 auto;
+}
+
+.inside-7{
+    /* border: 3px solid red; */
+    height: 1000px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.topbar-7{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+}
+
+.topbar-7 img{
+    height: 50px;
+    padding-top: 40px;
+
+}
+
+.topbar-7 ul{
+    height: 60px;
+    padding-top: 30px;
+}
+
+.topbar-7 li{
+    width: 110px;
+    float: left;
+}
+
+.topbar-7 a{
+    display: block;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 420;
+    line-height: 50px;
+}
+
+.topbar-7 a:hover{
+    border-bottom: 4px solid rgb(45, 179, 255) ;
+    /* background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 60%, rgb(226, 230, 233) 100%); */
+    color: rgb(45, 179, 255);
+}
+
+/* ----------- serve banner ----------- */
+.serve-bgi img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    max-width: 2500px;
+    height: 80%;
+    z-index: 0;
+    animation: box .6s ease-out;
+}
+
+@keyframes box {
+    0%{
+        transform: translateX(-400px);
+    }
+}
+
+.serve-text-1{
+    position: relative;
+    margin-top: 80px;
+    z-index: 2;
+}
+
+.serve-text-1 h1{
+    color: white;
+}
+
+.serve-text-1 .h2_sub{
+    margin-top: 15px;
+    color: white;
+}
+
+.serve-text-1 a{
+    display: inline-block;
+    background-color: rgb(0, 0, 0);
+    width: 280px;
+    height: 90px;
+    margin-top: 50px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 26px;
+    color: white;
+    line-height: 90px;
+}
+
+.serve-text-1 a i{
+    margin-left: 10px;
+}
+
+.serve-text-1 a:hover{
+    background-color: rgb(45, 179, 255);
+    color: white;
+}
+
+/* ----------- serve 第二格 ----------- */
+.serve-text-2{
+    text-align: center;
+    margin-top: 70px;
+}
+
+.serve-text-2 h2{
+    margin-bottom: 10px;
+}
+
+.serve-botton{
+    /* border: 3px solid red; */
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.serve-botton ul{
+    display: flex;
+    justify-content: center;
+    /* overflow: hidden; */
+}
+
+.serve-botton li{
+    overflow: hidden;
+    /* max-width: 40%; */
+    margin-right: 20px;
+    position: relative;
+}
+
+.serve-botton li::before{
+    content: "";
+    background-image: 
+    linear-gradient(to top,  rgba(45, 179, 255,1), rgba(255, 255, 255, 0));
+    clip-path: polygon(8% 0, 100% 0, 93% 100%, 0% 100%);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.botton-1{
+    clip-path: polygon(8% 0, 100% 0, 93% 100%, 0% 100%);
+}
+
+.botton-2{
+    clip-path: polygon(8% 0, 100% 0, 93% 100%, 0% 100%);
+}
+
+.botton-3{
+    clip-path: polygon(8% 0, 100% 0, 93% 100%, 0% 100%);
+}
+
+.serve-botton h2{
+    width: 250px;
+    height: 200px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    /* font-size: 25px; */
+    font-weight: 400;
+    letter-spacing: .4em;
+}
+
+.serve-botton img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    transition: transform .4s ease-in-out;
+}
+
+.serve-botton li:hover img{
+    transform: scale(1.2);
+}
+
+
+/* ----------- serve 第三格 ----------- */
+.serve-banner-2{
+    background-image: url(../img/banner/05.jpg);
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: bottom -220px right 0px;
+    margin-top: 100px;
+}
+
+.serve-text-3{
+    /* border: 3px solid red; */
+    max-width: 1200px;
+    margin: auto;
+}
+
+.serve-text-3 h1{
+    color: white;
+    padding-top: 100px;
+}
+
+.serve-text-3 h2{
+    color: white;
+    font-weight: 400;
+}
+
+.serve-text-3 a{
+    display: inline-block;
+    background-color: rgb(45, 179, 255);
+    width: 280px;
+    height: 90px;
+    margin-top: 50px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 26px;
+    color: white;
+    line-height: 90px;
+}
+
+.serve-text-3 a i{
+    margin-left: 10px;
+}
+
+.serve-text-3 a:hover{
+    background-color: #000000;
+    color: white;
+}
+
+/* ----------- serve 第四格 ----------- */
+.fff{
+    /* border: 3px solid red; */
+    height: 800px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.serve-photo-3{
+    max-width: 100%;
+    height: 800px;
+    background-color: #fff;
+    display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.img1{
+    /* border: 20px solid white; */
+    background-size: cover;
+    grid-column-start: 1;
+    grid-column-end: 6;
+
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+
+.img2{
+    background-image: url(../img/Function/05.jpg);
+
+    /* border: 20px solid white; */
+    background-size: cover;
+    grid-column-start: 6;
+    grid-column-end: 9;
+
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.img3{
+    background-image: url(../img/Function/06.jpg);
+
+    /* border: 20px solid white; */
+    background-size: cover;
+    grid-column-start: 1;
+    grid-column-end: 6;
+
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+
+.img4{
+    /* border: 20px solid white; */
+    background-size: cover;
+    grid-column-start: 6;
+    grid-column-end: 9;
+
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+
+.img5{
+    background-image: url(../img/Function/07.jpg);
+    /* border: 20px solid white; */
+    background-size: cover;
+    background-position: right -240px bottom 0;
+    grid-column-start: 9;
+    grid-column-end: 12;
+
+    grid-row-start: 2;
+    grid-row-end: 6;
+}
+
+/* ----------- serve back to top ----------- */
+a.back-to-top{
+    display: block;
+    position: fixed;
+    z-index: 3;
+}
+
+.back-to-top{
+    position: fixed;
+    width: 50px;
+    right: 30px;
+    bottom: 30px;
+}
+
+
+/* ----------- apps back to top ----------- */
+/* a.back-to-top{
+    display: block;
+    position: fixed;
+    z-index: 3;
+}
+
+.back-to-top{
+    position: fixed;
+    width: 50px;
+    right: 30px;
+    bottom: 30px;
+} */

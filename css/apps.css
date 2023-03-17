@@ -1,0 +1,53 @@
+/* ----------- apps top ----------- */
+.apps{
+    /* background-image: url(../img/banner/01.jpg); */
+    background-color: rgb(184, 184, 184);
+    clip-path: ellipse(100% 500px at 50% 20%);
+    max-width: 100%;
+    height: 1200px;
+    margin: 0 auto;
+}
+
+.apps-inside{
+    /* border: 3px solid red; */
+    max-width: 1200px;
+    margin: auto;
+}
+
+.apps-topbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.apps-topbar img{
+    height: 50px;
+    padding-top: 40px;
+
+}
+
+.apps-topbar ul{
+    height: 60px;
+    padding-top: 30px;
+}
+
+.apps-topbar li{
+    width: 110px;
+    float: left;
+}
+
+.apps-topbar a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 420;
+    line-height: 50px;
+}
+
+.apps-topbar a:hover{
+    border-bottom: 4px solid rgb(45, 179, 255) ;
+    /* background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 60%, rgb(226, 230, 233) 100%); */
+    color: rgb(45, 179, 255);
+}
