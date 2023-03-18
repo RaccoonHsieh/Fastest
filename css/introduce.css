@@ -145,15 +145,19 @@
 }
 
 .two-2-icon li{
+    display: flex;
     margin-top: 50px;
 }
 
 .two-2-icon h3{
     color: white;
+    margin-top: 30px;
 }
 
-.two-2-icon h3 i{
+.two-2-icon i{
+    color: white;
     font-size: 70px;
+    margin-right: 30px;
 }
 
 /* ----------- introduce 第三格 ----------- */
@@ -225,7 +229,17 @@
 .ccc{
     /* border: 3px solid red; */
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
+}
+
+.two-5-img{
+    /* border: 3px solid red; */
+    /* background-image: url(../img/goods/04.png); */
+    /* background-repeat: no-repeat; */
+    height: 400px;
+    margin-top: 200px;
+    margin-bottom: 80px;
+    text-align: center;
 }
 
 .two-5-text h1{
@@ -235,16 +249,6 @@
     font-size: 100px;
     position: absolute;
     left: 0;
-}
-
-.two-5-img{
-    /* border: 3px solid red; */
-    background-image: url(../img/goods/04.png);
-    background-repeat: no-repeat;
-    height: 400px;
-    text-align: center;
-    margin-top: 250px;
-    margin-bottom: 80px;
 }
 
 .two-5-function ul{
@@ -259,7 +263,7 @@
     border-radius: 50%;
     width: 120px;
     height: 120px;
-    margin-bottom: 250px;
+    margin-bottom: 100px;
     margin-right: 50px;
 }
 

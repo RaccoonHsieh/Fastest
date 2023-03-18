@@ -54,11 +54,8 @@
 }
 
 .aboutus-title-1{
-    position: absolute;
-    z-index: 2;
-    
-    right: 120px;
-    top: 300px;
+    float: right;
+    margin-top: 400px;
 }
 
 .aboutus-title-1 h1{
@@ -87,11 +84,10 @@
 }
 
 .aboutus-img-one{
-    position: relative;
     margin-top: 50px;
 }
 
-.aboutus-img-one img:nth-child(1){
+/* .aboutus-img-one img:nth-child(1){
     position: relative;
     height: 700px;
 }
@@ -101,6 +97,22 @@
     height: 400px;
     right: 80px;
     top: 650px;
+    box-shadow: 15px 15px 30px rgba(11, 13, 30, .3);
+} */
+
+.aboutus-img-one{
+    background-image: url(../img/banner/04.jpg);
+    max-width: 1200px;
+    height: 800px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.aboutus-img-one img{
+    /* border: 3px solid red; */
+    height: 400px;
+    margin-left: 800px;
+    margin-top: 90px;
     box-shadow: 15px 15px 30px rgba(11, 13, 30, .3);
 }
 
@@ -262,11 +274,6 @@
     margin-bottom: 20px;
 }
 
-.aboutus-title-4 h1 span{
-    margin-bottom: 20px;
-    color: rgb(45, 179, 255);
-}
-
 .aboutus-title-4 p{
     font-size: 16px;
     line-height: 1.6;
@@ -290,19 +297,16 @@
     background-image: 
     linear-gradient(270deg, rgb(11, 13, 30) 30%, rgba(255, 255, 255, 0) 40%),
     url(../img/backgroundimg/04.jpg);
-    max-width: 100%;
+    max-width: 100%,100%;
     height: 700px;
-    background-size: contain;
-    background-repeat: no-repeat, no-repeat;
-}
-
-.inside-six-five{
-    /* border: 3px solid red; */
-    max-width: 1200px;
-    margin: 0 auto;    
+    background-size: cover;
+    /* background-repeat: no-repeat; */
 }
 
 .aboutus-title-five{
+    /* border: 3px solid red; */
+    max-width: 1200px;
+    margin: 0 auto;        
     display: flex;
     flex-direction:column ;
     justify-content: flex-start;
@@ -310,11 +314,18 @@
     padding-top: 200px;
 }
 
+.inside-six-five{
+    /* border: 3px solid red; */
+    max-width: 50%;
+    margin: 0 auto;
+    margin-left: 800px;
+}
+
+
 .aboutus-title-five h3{
     margin-bottom: 10px;
     font-weight: 250;
     letter-spacing: 13px;
-    
 }
 
 .aboutus-title-five h1{
@@ -330,7 +341,7 @@
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 20px;
-    max-width: 50%;
+    /* max-width: 50%; */
 }
 
 .aboutus-title-five a{
@@ -366,4 +377,9 @@ a.back-to-top{
     width: 50px;
     right: 30px;
     bottom: 30px;
+}
+
+
+.color-text{
+    color: rgb(45, 179, 255);
 }

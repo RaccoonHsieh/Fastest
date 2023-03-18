@@ -1,17 +1,20 @@
 /* ----------- apps top ----------- */
 .apps{
-    /* background-image: url(../img/banner/01.jpg); */
-    background-color: rgb(184, 184, 184);
+    background-image: url(../img/banner/08.svg);
+    background-color: rgb(206, 226, 233);
     clip-path: ellipse(100% 500px at 50% 20%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right 80px bottom 15px;
     max-width: 100%;
-    height: 1200px;
+    height: 700px;
     margin: 0 auto;
 }
 
 .apps-inside{
     /* border: 3px solid red; */
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .apps-topbar{
@@ -23,7 +26,6 @@
 .apps-topbar img{
     height: 50px;
     padding-top: 40px;
-
 }
 
 .apps-topbar ul{
@@ -59,7 +61,7 @@
 }
 
 .apps-inside-two h1{
-    margin-top: 130px;
+    margin-top: 100px;
 }
 
 .apps-title-one{
@@ -81,4 +83,219 @@
     height: 70px;
     margin-top: 20px;
     margin-left: 20px;
+}
+
+/* ----------- apps interface ----------- */
+.apps-interface-wrapper{
+    background-color: rgb(255, 255, 255);
+    max-width: 100%;
+    height: 1000px;
+    margin: 0 auto;
+}
+
+.apps-interface{
+    /* border: 3px solid red; */
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.apps-interface h3{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+.apps-interface img{
+    height: 70px;
+    margin-top: 50px;
+}
+
+.apps-center{
+    /* border: 3px solid red; */
+    max-width: 800px;
+    overflow-y: hidden;
+    float: right;
+    margin-top: 60px;
+    /* margin-bottom: 90px; */
+    margin-right: 50px;
+} 
+
+.apps-carousel {
+    width: var(--carousel-width);
+}
+
+.scroll{
+    display: flex;
+    justify-content: start;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    scroll-behavior: smooth;
+
+}
+
+.scroll::-webkit-scrollbar {
+    display: none;
+  }
+
+.scroll-item-outer{
+    margin-right: 80px;
+    scroll-snap-align: center;
+}
+
+.scroll-item {
+    width: var(--carousel-width);
+}
+
+.scroll-item img{
+    width: 300px;
+}
+
+#navigate {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1vw;
+}
+
+.apps-interface-wrapper{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    clip-path: ellipse(100% 500px at 50% 10%);
+    max-width: 100%;
+    height: 600px;
+    margin: 0 auto;
+    margin-top: 350px;
+    z-index: -1;
+}
+
+/* ----------- apps QA ----------- */
+.apps-qa-wrapper{
+    position: relative;
+    background-color: rgb(236, 236, 236);
+    height: 1000px;
+    margin-top: -150px;
+    z-index: -2;
+}
+
+.apps-qa-in{
+    /* border: 3px solid red; */
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+.apps-qa-inside{
+    /* border: 3px solid red; */
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+.apps-qa-inside ul{
+    /* border: 3px solid red; */
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    height: 300px;
+}
+
+.apps-qa-inside li{
+    height: 100px;
+}
+
+.apps-qa-inside h2{
+    font-size: 20px;
+    padding-top: 200px;
+}
+
+.apps-qa-inside ul li a{
+    font-size: 20px;
+    padding-top: 20px;
+    display: block;
+    text-decoration: none;
+    color: black;
+    height: 100px;
+    line-height: 100px;
+}
+
+.apps-qa-inside a:hover{
+    color:  rgb(45, 179, 255);
+}
+
+
+.apps-qa ul{
+    margin-top: 70px;
+}
+
+.apps-qa li{
+    text-align: left;
+}
+
+.apps-qa-text{
+    /* border: 3px solid red; */
+    max-width: 800px;
+    margin: 0 auto; 
+}
+
+.apps-qa-text i:nth-of-type(1){
+    float: right;
+    margin-top: 20px;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.apps-qa-text i:nth-of-type(2){
+    opacity: 0;
+    float: right;
+    margin-top: 20px;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+
+.apps-qa-text h2{
+    font-size: 20px;
+}
+
+.big-text{
+    color: rgb(169, 169, 169);
+    font-size: 35px;
+    margin-right: 20px;
+}
+
+.apps-qa-text p{
+    color: rgb(123, 123, 123);
+    font-size: 17px;
+    line-height: 1.6;
+    opacity: 0;
+    padding-left: 50px;
+}
+
+.apps-qa-text i:nth-of-type(1):hover{
+    opacity: 0;
+}
+
+
+
+
+
+
+
+
+/* ----------- apps back to top ----------- */
+a.back-to-top{
+    display: block;
+    position: fixed;
+    z-index: 3;
+}
+
+.back-to-top{
+    position: fixed;
+    width: 50px;
+    right: 30px;
+    bottom: 30px;
 }
