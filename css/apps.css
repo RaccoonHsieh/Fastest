@@ -51,3 +51,34 @@
     /* background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 60%, rgb(226, 230, 233) 100%); */
     color: rgb(45, 179, 255);
 }
+
+.apps-inside-two{
+    /* border: 3px solid red; */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.apps-inside-two h1{
+    margin-top: 130px;
+}
+
+.apps-title-one{
+    display: flex;
+    margin-top: 50px;
+
+}
+
+.apps-title-one img{
+    height: 200px;
+}
+
+.apps-title-two{
+    display: flex;
+    flex-direction: column;
+}
+
+.apps-title-two img{
+    height: 70px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
