@@ -62,7 +62,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    height: 54.5%;
+    height: 720px;
     z-index: 0;
     animation: box .6s ease-out;
 }
