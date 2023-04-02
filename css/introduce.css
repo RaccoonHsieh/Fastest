@@ -1,4 +1,4 @@
-@import url('default.css');
+@import url(default.css);
 
 /* ----------- introduce 第一格 ----------- */
 .two{
@@ -10,51 +10,76 @@
     margin: 0 auto;
 }
 
-.inside-2{
+.topbar{
+    background-color: #ffffff;
+    height: 80px;
+}
+
+.topbar_el{
     /* border: 3px solid red; */
     max-width: 1200px;
-    margin: auto;
-}
-
-.topbar-2{
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    margin-top: 30px;
 }
 
-.topbar-2 img{
-    height: 50px;
-    padding-top: 40px;
+.topbar img{
+    height: 40px;
+    padding-top: 15px;
 }
 
-.topbar-2 ul{
-    height: 60px;
-    padding-top: 30px;
+.topbar ul{
+    display: flex;
+    gap: 30px;
 }
 
-.topbar-2 li{
-    width: 110px;
-    float: left;
+.topbar li{
+    flex-grow: 1;
 }
 
-.topbar-2 a{
-    display: block;
+.bar{
+    position: relative;
     text-decoration: none;
-    color: white;
-    text-align: center;
+    color: black;
     font-size: 18px;
-    font-weight: 420;
-    line-height: 50px;
+    font-weight: 300;
+    line-height: 60px;
 }
 
-.topbar-2 a:hover{
-    border-bottom: 4px solid rgb(45, 179, 255) ;
-    /* background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 60%, rgb(226, 230, 233) 100%); */
+.bar::after{
+    position: absolute;
+    top: 35px;
+    left: 0;
+    display: block;
+    content: "";
+    width: 0%;
+    height: 3.5px;
+    background-color: rgb(45, 179, 255);
+    transition: .2s .1s;
+}
+
+.bar:hover::after{
+    width: 100%;
+}
+
+.bar:hover{
+    color: rgb(45, 179, 255);
+}
+
+.topbar_el li i{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.topbar_el li i:hover{
     color: rgb(45, 179, 255);
 }
 
 .title-2{
-    margin-top: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 120px;
 }
 
 .title-2 h2{
@@ -78,37 +103,33 @@
 /* ----------- introduce 第一格按鈕 ----------- */
 .one-button{
     background-color: rgb(255, 255, 255);
-    height: 150px;
+    height: 80px;
     display: flex;
     justify-content: center;
-    /* margin: 25px 0px; */
 }
 
 .one-button h2{
-    margin-top: 55px;
+    margin-top: 15px;
     color: rgb(0, 0, 0);
 }
 
 .one-inside-button{
     margin-left: 50px;
-    margin-top: 30px;
-    /* margin-top: 25px; */
+    margin-top: 15px;
+    display: flex;
+
 }
 
 .one-inside-button a{
     margin-left: 30px;
     display: block;
-    float: left;
-    width: 300px;
-    height: 90px;
+    width: 200px;
+    height: 50px;
     border-radius: 50px;
     background-color: rgb(0, 0, 0);
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 37px;
-    letter-spacing: 0.09em;
+    font-size: 20px;
     text-align: center;
-    line-height: 90px;
+    line-height: 50px;
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
@@ -188,13 +209,47 @@
 }
 
 /* ----------- introduce 第四格 ----------- */
-.bbb{
+.parent_block{
+    position: relative;
     /* border: 3px solid red; */
-    max-width: 1200px;
-    margin: auto;
 }
 
-.two-4{
+.right_block{
+    position: absolute;
+    right: 50px;
+    top: 150px;
+}
+
+.list{
+    width: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.list li{
+    margin-bottom: 20px;
+}
+
+.right_block a.link{
+    display: block;
+    height: 120px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgba(112, 112, 112, .5);
+}
+
+.right_block a.-on{
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+#scroll_block{
+    height: 700px;
+    flex-grow: 1;
+    overflow-y: auto;
+    /* overflow: hidden; */
+}
+
+#left1{
     background-image: 
     linear-gradient(270deg, rgb(0, 0, 0) 20%, rgba(255, 255, 255, 0) 90%),
     url(../img/Function/04.jpg);
@@ -205,8 +260,32 @@
     background-position: left bottom, left -80px bottom -100px;
 }
 
+#left2{
+    background-image: 
+    linear-gradient(270deg, rgb(0, 0, 0) 20%, rgba(255, 255, 255, 0) 90%),
+    url(../img/Function/05.jpg);
+    max-width: 100%;
+    height: 700px;
+    background-size: 100%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: left bottom, left -80px bottom -100px;
+}
+
+#left3{
+    background-image: 
+    linear-gradient(270deg, rgb(0, 0, 0) 20%, rgba(255, 255, 255, 0) 90%),
+    url(../img/Function/06.jpg);
+    max-width: 100%;
+    height: 700px;
+    background-size: 100%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: left bottom, left -80px bottom -100px;
+}
+
 .two-4-text{
-    /* margin: 0px 360px; */
+    /* border: 3px solid red; */
+    max-width: 1200px;
+    margin: auto;
     text-align: right;
 }
 
@@ -226,29 +305,74 @@
 }
 
 /* ----------- introduce 第五格 ----------- */
+@import url("default.css");
 .ccc{
     /* border: 3px solid red; */
     max-width: 1200px;
+    height: 700px;
     margin: 0 auto;
 }
 
-.two-5-img{
-    /* border: 3px solid red; */
-    /* background-image: url(../img/goods/04.png); */
-    /* background-repeat: no-repeat; */
-    height: 400px;
-    margin-top: 200px;
-    margin-bottom: 80px;
-    text-align: center;
-}
-
 .two-5-text h1{
+    height: 60%;
     writing-mode: vertical-lr;
+    -webkit-text-stroke: 1.5px rgba(0, 0, 0, 0.4);
+    -webkit-text-fill-color: transparent;
     transform: rotate(180deg);
     color: rgb(217, 217, 217);
-    font-size: 100px;
+    font-size: 60px;
     position: absolute;
-    left: 0;
+    left: 30px;
+
+}
+
+.two-5-img{
+    position: relative;
+    text-align: center;
+    top: 100px;
+}
+.two-5-img ul{
+}
+
+.two-5-img li{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.two-5-img li:nth-child(1){
+    top: 80px;
+    right: 220px;
+}
+
+.two-5-img li:nth-child(2){
+    top: 50px;
+    left: 480px;
+}
+
+.two-5-img li:nth-child(3){
+    top: 160px;
+    left: 250px;
+}
+
+.two-5-img li:nth-child(4){
+    top: 140px;
+    right: 400px;
+}
+
+.two-5-img li:nth-child(5){
+    top: 200px;
+    left: 420px;
+}
+
+.two-5-img li > img{
+    height: 100%;
+}
+
+.two-5-function{
+    margin-top: 130px;
 }
 
 .two-5-function ul{
@@ -257,44 +381,27 @@
 }
 
 .two-5-function li{
-    display: inline-block;
     background-color: white;
-    border: 3px solid rgb(45, 179, 255);
+    border: 2.5px solid rgb(45, 179, 255);
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    width: 120px;
-    height: 120px;
     margin-bottom: 100px;
-    margin-right: 50px;
-}
-
-.two-5-function i{
-    font-size: 60px;
-    color:  rgb(45, 179, 255);
+    margin-right: 30px;
 }
 
 .two-5-function li i{
     display: block;
     border-radius: 50%;
-    width: 120px;
-    height: 120px;
+    font-size: 45px;
+    color:  rgb(45, 179, 255);
     text-align: center;
-    line-height: 110px;
+    line-height: 100px;
+    cursor: pointer;
 }
-
-.two-5-function-sub ul{
-}
-
-.two-5-function-sub li{
-
-}
-
-.two-5-function-sub li img{
-    width: 150px;
-}
-
 
 .two-5-function li:hover{
-    border: 3px solid rgb(208, 208, 208);
+    border: 2.5px solid rgb(208, 208, 208);
 }
 
 .two-5-function i:hover{
@@ -324,30 +431,71 @@
     margin: 10px auto;
 }
 
-.six-push{
-    margin-top: 50px;
+.tabs_list{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
 }
 
-.six-push a{
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 30px;
-    letter-spacing: 0.09em;
-    color: black;
+.tabs_item:nth-child(1){
+    position: relative;
 }
 
-.six-push p{
-    width: 60%;
+.tabs_item:nth-child(1)::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width:100% ;
+    height: 3px;
+    background-color: #0abdfe;
+    transition: .3s;
+}
+
+.tabs_item:nth-child(1).tab2::before{
+    left: 160px;
+}
+
+.tabs_item:nth-child(1).tab3::before{
+    left: 320px;
+}
+
+.tabs_btn{
+    /* border: 1px solid red; */
+    padding-bottom: 10px;
+    margin-top: 60px;
     font-size: 18px;
-    margin: 0 auto;
-    color: rgb(112, 112, 112);
+    border: 0;
+    cursor: pointer;
+    color: #000;
+    background-color: #ffffff00;
 }
 
-.six-push img{
+.tabs_btn.isactive {
+    color: #0abdfe;
+}
+
+.tabs_content{
+    display: none;
+}
+
+.tabs_content.isactive {
+    display: block;
+}
+
+.tabs_content p{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgb(135, 135, 135);
+}
+
+.tabs_content img{
     float: left;
     transform: rotateY(180deg);
-    width: 1000px;
+    width: 800px;
     margin-top: 100px;
 }
 
@@ -355,37 +503,32 @@
 
 .six-button{
     background-color: black;
-    height: 150px;
+    height: 80px;
     display: flex;
     justify-content: center;
-    /* margin: 25px 0px; */
 }
 
 .six-button h2{
-    margin-top: 55px;
+    margin-top: 15px;
     color: white;
 }
 
 .six-inside-button{
     margin-left: 50px;
-    margin-top: 30px;
-    /* margin-top: 25px; */
+    margin-top: 15px;
 }
 
 .six-inside-button a{
     margin-left: 30px;
     display: block;
     float: left;
-    width: 300px;
-    height: 90px;
+    width: 200px;
+    height: 50px;
     border-radius: 50px;
     background-color: white;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 37px;
-    letter-spacing: 0.09em;
+    font-size: 20px;
     text-align: center;
-    line-height: 90px;
+    line-height: 50px;
     color: black;
     text-decoration: none;
 }
@@ -421,6 +564,16 @@
     z-index: 1;
 }
 
+.seven li h2{
+    height: 300px;
+    position: relative;/*把自己定位為父層*/
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
 .seven img{
     position: absolute;
     top: 0;
@@ -429,16 +582,6 @@
     height: 100%;
     z-index: 0;
     transition: transform .4s ease-in-out;
-}
-
-.seven li  h2{
-    height: 300px;
-    position: relative;/*把自己定位為父層*/
-    z-index: 3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
 }
 
 .seven li:hover img{

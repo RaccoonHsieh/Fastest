@@ -9,27 +9,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="shortcut icon" href="img/logo/Fastest_logo.ico" type="image/x-icon">
-    <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/introduce.css">
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/fullpage.css">
     <title>Fastest 車款介紹</title>
 </head>
 <body>
     <div id="top"></div>
     <!----------- introduce topbar banner ----------->
     <div class="two">
-    <div class="inside-2">
-        <nav class="topbar-2">
-            <img src="img/logo/logo_1_white.svg" alt="">
+        <nav class="topbar">
+            <div class="topbar_el">
+            <a href="index.html" class="logo_el"><img src="img/logo/logo_1.svg" alt=""></a>
             <ul>
-                <li><a href="index.html">首頁</a></li>
-                <li><a href="introduce.html">車款介紹</a></li>
-                <li><a href="buildcar.html">打造愛車</a></li>
-                <li><a href="serve.html">車主服務</a></li>
-                <li><a href="apps.html">App介紹</a></li>
-                <li><a href="aboutus.html">關於Fastest</a></li>
-                <li><a href="produce.html">生活精品</a></li>
+                <li><a href="index.html" class="bar">首頁</a></li>
+                <li><a href="introduce.html" class="bar">車款介紹</a></li>
+                <li><a href="buildcar.html" class="bar">打造愛車</a></li>
+                <li><a href="serve.html" class="bar">車主服務</a></li>
+                <li><a href="apps.html" class="bar">App介紹</a></li>
+                <li><a href="aboutus.html" class="bar">關於Fastest</a></li>
+                <li><a href="produce.html" class="bar">生活精品</a></li>
+                <li><i class="bi bi-chat-dots"></i></li>
+                <li><i class="bi bi-person"></i></li>
             </ul>
+            </div>
         </nav>
     <div class="title-2">
         <h2>FASTEST</h2>
@@ -79,14 +82,40 @@
     </div>
 
     <!----------- introduce 第四格 ----------->
-    <div class="two-4">
-        <div class="bbb">
-        <div class="two-4-text">
-            <h1>INTERIOR</h1>
-            <h2>採用最先進的工程學原理<br>提供最優質的坐姿支撐和減震效果</h2>
+    <div class="parent_block">
+
+        <div class="right_block">
+            <ul class="list">
+                <li><a href="#" id="link1" class="link -on"></a></li>
+                <li><a href="#" id="link2" class="link"></a></li>
+                <li><a href="#" id="link3" class="link"></a></li>
+            </ul>
+        </div>
+    
+        <div class="all_block" id="scroll_block">
+        <div class="left_block" id="left1" data-id="link1">
+            <div class="two-4-text">
+                <h1>INTERIOR</h1>
+                <h2>採用最先進的工程學原理<br>提供最優質的坐姿支撐和減震效果</h2>
+            </div>
+        </div>
+        <div class="left_block" id="left2" data-id="link2">
+            <div class="two-4-text">
+                <h1>INTERIOR-2</h1>
+                <h2>採用最先進的工程學原理</h2>
+            </div>
+        </div>
+        <div class="left_block" id="left3" data-id="link3">
+            <div class="two-4-text">
+                <h1>INTERIOR-3</h1>
+                <h2>採用最先進的工程學理，提供</h2>
+            </div>
         </div>
         </div>
-    </div>
+        </div>
+        
+        <script src="js/introduce.js"></script>
+        
     <!----------- introduce 第五格 ----------->
 
     <div class="two-5">
@@ -96,23 +125,23 @@
         <div class="ccc">
             <div class="two-5-img">
                 <img src="img/goods/04.png" alt="">
-            </div>
-            <div class="two-5-function-sub">
+            <!-- </div> -->
+            <!-- <div class="two-5-function-sub"> -->
                 <ul>
-                    <!-- <li><img src="img/button/01.jpg" alt=""></li> -->
-                    <!-- <li><img src="img/button/02.jpg" alt=""></li>
-                    <li><img src="img/button/03.jpg" alt=""></li>
-                    <li><img src="img/button/01.jpg" alt=""></li>
-                    <li><img src="img/button/02.jpg" alt=""></li> -->
+                    <li class="img_el img" data-id="one"><img src="img/button/01.jpg" alt=""></li>
+                    <li class="img_el img" data-id="two"><img src="img/button/02.jpg" alt=""></li>
+                    <li class="img_el img" data-id="three"><img src="img/button/03.jpg" alt=""></li>
+                    <li class="img_el img" data-id="four"><img src="img/button/01.jpg" alt=""></li>
+                    <li class="img_el img" data-id="five"><img src="img/button/02.jpg" alt=""></li>
                 </ul>
                 </div>
         <div class="two-5-function">
             <ul>
-                <li><a href=""><i class="bi bi-ev-front-fill"></i></a></li>
-                <li><a href=""><i class="bi bi-ev-front-fill"></i></a></li>
-                <li><a href=""><i class="bi bi-ev-front-fill"></i></a></li>
-                <li><a href=""><i class="bi bi-ev-front-fill"></i></a></li>
-                <li><a href=""><i class="bi bi-ev-front-fill"></i></a></li>
+                <li class="btn_img"><i class="bi bi-ev-front-fill" id="one"></i></li>
+                <li class="btn_img"><i class="bi bi-ev-front-fill" id="two"></i></li>
+                <li class="btn_img"><i class="bi bi-ev-front-fill" id="three"></i></li>
+                <li class="btn_img"><i class="bi bi-ev-front-fill" id="four"></i></li>
+                <li class="btn_img"><i class="bi bi-ev-front-fill" id="five"></i></li>
             </ul>
         </div>
         </div>
@@ -121,59 +150,52 @@
     <!----------- introduce 第六格 ----------->
 
     <div class="six">  
-
-    <div class="ddd">
-    <div class="six-text">
-        <h2 class="h2-sub">專為安全打造</h2>
-        <p>我們深知在道路上行駛的車輛必須經受各種環境和情況的考驗，因此我們致力於提供最優質的安全性能和技術，以確保每位駕駛者和乘客的安全。</p>
-    </div>
-
-    <div class="six-push">
-        <ul>
-            <li>
-                <a href="">自動緊急煞車系統</a>
+        <div class="ddd">
+        <div class="six-text">
+            <h2 class="h2-sub">專為安全打造</h2>
+            <p>我們深知在道路上行駛的車輛必須經受各種環境和情況的考驗，因此我們致力於提供最優質的安全性能和技術，以確保每位駕駛者和乘客的安全。</p>
+        </div>
+    
+        <div class="tabs">
+            <ul class="tabs_list">
+                <li class="tabs_item">
+                    <button class="tabs_btn isactive" data-tabs-path="main">緊急煞車系統</button>
+                </li>
+                <li>
+                    <button class="tabs_btn" data-tabs-path="archive">盲點偵測系統</button>
+                </li>
+                <li>
+                    <button class="tabs_btn" data-tabs-path="settings">車道保持系統</button>
+                </li>
+            </ul>
+            <div class="tabs_content isactive" data-tabs-target="main">
                 <p>配備了最先進的感測器和算法，可以檢測到各種障礙物，包括其他車輛、行人和障礙物，還可以在不同的駕駛條件下運作，例如在高速公路和城市交通。</p>
                 <img src="img/goods/02.png" alt="">
-            </li>
-            <!-- <li>
-                <a href="">盲點偵測系統</a>
+            </div>
+            <div class="tabs_content" data-tabs-target="archive">
                 <p>可以在駕駛員開始變道時立即發出警告，以確保駕駛員的行為安全。此外，我們的盲點偵測系統還具有自學習功能，可以根據駕駛員的行為和偏好進行自我調整，提高系統的準確性和可靠性。</p>
-                <img src="../img/goods/02.png" alt="">
-            </li>
-            <li>
-                <a href="">車道保持系統</a>
+                <img src="img/goods/01.png" alt="">
+            </div>
+            <div class="tabs_content" data-tabs-target="settings">
                 <p>車道保持系統是一種車輛安全技術，可以幫助駕駛員在行駛過程中保持車輛在正確的車道內。該系統使用攝像頭或雷達等感測器來檢測車道標線，並通過自動控制方向盤或車輛來保持車輛在車道內。</p>
-                <img src="../img/goods/02.png" alt="">
-            </li> -->
-        </ul>
-    </div>
+                <img src="img/goods/03.png" alt="">
+            </div>
+        </div>
 
-    <!-- <div class="six-icons">
-        <ul>
-            <li>
-                <img src="" alt="">
-                <h3>性能表現</h3>
-            </li>
-            <li>
-                <img src="" alt="">
-                <h3>性能表現</h3>
-            </li>
-        </ul>
-    </div> -->
-    </div>
-    </div>
+        <script src="js/introduce_tab.js"></script>
+   
     <!----------- introduce 第六格下面按鈕 ----------->
 
-    <div class="six-button">
+    <!-- <div class="six-button">
         <h2>全新 Zone系列</h2>
 
         <div class="six-inside-button">
         <a href="">購車諮詢</a>
         <a href="">打造愛車</a>
         </div>
-    </div>
+    </div> -->
     <!----------- introduce 第七格 ----------->
-    <div class="seven">
+    <!-- <div class="seven">
         <ul>
             <li>
                 <h2>引擎</h2>
@@ -192,7 +214,7 @@
                 <img src="img/button/04.jpg" alt="">
             </li>
         </ul>
-    </div>
+    </div> -->
 
     <!----------- introduce back to top ----------->
     <a href="#top" class="back-to-top"><img src="img/logo/backtotop.svg" alt=""></a>   

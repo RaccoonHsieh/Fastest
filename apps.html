@@ -11,6 +11,8 @@
     <link rel="shortcut icon" href="img/logo/Fastest_logo_white.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/apps.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <title>Fastest APP介紹</title>
 </head>
@@ -18,20 +20,22 @@
     <!-- <div id="top"></div> -->
     <!----------- apps top ----------->
     <div class="apps">
-        <div class="apps-inside">
-        <nav class="apps-topbar">
-            <img src="img/logo/logo_1.svg" alt="">
+        <nav class="topbar">
+            <div class="topbar_el">
+            <a href="index.html" class="logo_el"><img src="img/logo/logo_1.svg" alt=""></a>
             <ul>
-                <li><a href="index.html">首頁</a></li>
-                <li><a href="introduce.html">車款介紹</a></li>
-                <li><a href="buildcar.html">打造愛車</a></li>
-                <li><a href="serve.html">車主服務</a></li>
-                <li><a href="apps.html">App介紹</a></li>
-                <li><a href="aboutus.html">關於Fastest</a></li>
-                <li><a href="produce.html">生活精品</a></li>
+                <li><a href="index.html" class="bar">首頁</a></li>
+                <li><a href="introduce.html" class="bar">車款介紹</a></li>
+                <li><a href="buildcar.html" class="bar">打造愛車</a></li>
+                <li><a href="serve.html" class="bar">車主服務</a></li>
+                <li><a href="apps.html" class="bar">App介紹</a></li>
+                <li><a href="aboutus.html" class="bar">關於Fastest</a></li>
+                <li><a href="produce.html" class="bar">生活精品</a></li>
+                <li><i class="bi bi-chat-dots"></i></li>
+                <li><i class="bi bi-person"></i></li>
             </ul>
+            </div>
         </nav>
-        </div>
 
         <div class="apps-inside-two">
             <h1>Fastest 科技購</h1>
@@ -52,46 +56,32 @@
         <img src="img/logo/01.svg" alt="">
         <img src="img/logo/02.svg" alt="">
     </div>
-    <div class="apps-center">
-    <div class="apps-carousel">
-        <ul class="scroll">
-            <li class="scroll-item-outer">
-                <div id="slide-1" class="scroll-item">
-                    <img src="img/Function/08.png" alt="">
-                    <h2 class="h2-sub">創新界面</h2>
-                    <p>專為車主和車迷打造的一款應用程式，提供了多種實用功能和豐富的汽車資訊</p>
-                </div>
-            </li>
-            <li class="scroll-item-outer">
-                <div id="slide-2" class="scroll-item">
-                    <img src="img/Function/09.png" alt="">
-                    <h2 class="h2-sub">車庫模式</h2>
-                    <p>透過APP查詢車輛相關的信息，包括車輛的品牌、型號、年份、售價等。進入介紹頁面，了解車輛的性能、配置、外觀、內飾等細節</p>
-                </div>
-            </li>
-            <li class="scroll-item-outer">
-                <div id="slide-3" class="scroll-item">
-                    <img src="img/Function/09.png" alt="">
-                    <h2 class="h2-sub">定位模式</h2>
-                    <p>為您定位車輛所在位子，停車場、路邊停車，為您貼心指引方向</p>
-                </div>
-            </li>
-            <li class="scroll-item-outer">
-                <div id="slide-4" class="scroll-item">
-                    <img src="img/Function/08.png" alt="">
-                    <h2 class="h2-sub">導航系統</h2>
-                    <p>儲存自家點或興趣點，聲控即可為您自動導航，即時更改路線，便利又快速</p>
-                </div>
-            </li>
-            <li class="scroll-item-outer">
-                <div id="slide-5" class="scroll-item">
-                    <img src="img/Function/09.png" alt="">
-                    <h2 class="h2-sub">掌握開車資訊</h2>
-                    <p>查詢期間內行程公里數，定時提醒您到場維修及保養</p>
-                </div>
-            </li>
-        </ul>
-    </div>
+    <div class="nonloop">
+        <div id="slide" class="scroll-item">
+            <img src="img/Function/08.png" alt="">
+            <h2 class="h2-sub">創新界面</h2>
+            <p>專為車主和車迷打造的一款應用程式，提供了多種實用功能和豐富的汽車資訊</p>
+        </div>
+        <div id="slide" class="scroll-item">
+            <img src="img/Function/09.png" alt="">
+            <h2 class="h2-sub">車庫模式</h2>
+            <p>透過APP查詢車輛相關的信息，包括車輛的品牌、型號、年份、售價等。進入介紹頁面，了解車輛的性能、配置、外觀、內飾等細節</p>
+        </div>
+        <div id="slide" class="scroll-item">
+            <img src="img/Function/09.png" alt="">
+            <h2 class="h2-sub">定位模式</h2>
+            <p>為您定位車輛所在位子，停車場、路邊停車，為您貼心指引方向</p>
+        </div>
+        <div id="slide" class="scroll-item">
+            <img src="img/Function/08.png" alt="">
+            <h2 class="h2-sub">導航系統</h2>
+            <p>儲存自家點或興趣點，聲控即可為您自動導航，即時更改路線，便利又快速</p>
+        </div>
+        <div id="slide" class="scroll-item">
+            <img src="img/Function/09.png" alt="">
+            <h2 class="h2-sub">掌握開車資訊</h2>
+            <p>查詢期間內行程公里數，定時提醒您到場維修及保養</p>
+        </div>
     </div>
     <nav id="navigate">
         <a href="#slide-1"></a>
@@ -158,18 +148,15 @@
 
 
 
-
-
-
-
-
-
-
     <!----------- apps back to top ----------->
     <a href="#top" class="back-to-top"><img src="img/logo/backtotop.svg" alt=""></a>   
 
 
     <!----------- apps footer ----------->
+
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/apps.js"></script>
 
 </body>
 </html>
