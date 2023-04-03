@@ -46,7 +46,7 @@ p{
 /* ----------- footer ----------- */
 .footer{
     background-color: rgb(22, 36, 52);
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: center;
 }
@@ -78,6 +78,10 @@ p{
     font-size: 18px;
     line-height: 30px;
     letter-spacing: 0.03em;
+}
+
+.footer_font{
+    display: none;
 }
 
 .index_icon li a:hover{
@@ -116,4 +120,106 @@ p{
 
 .serve-text a:hover{
     color:  rgb(45, 179, 255) ;
+}
+
+
+/* ############## mobile ############## */
+@media screen and (max-width: 414px){
+
+body{
+    font-family: Noto Sans TC;
+    font-style: normal;
+    letter-spacing: .08rem;
+
+}
+
+h1{
+    font-weight: 550;
+    font-size: 40px;
+    line-height: 126%;
+    letter-spacing: 0.09em;
+}
+
+h2{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 53px;
+    letter-spacing: 0.09em;
+}
+
+.h2_sub{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 126%; 
+    letter-spacing: 0.09em;
+}
+
+
+h3{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0.09em;
+}
+
+p{
+    font-weight: 350;
+    font-size: 14px;
+    line-height: 136.52%;
+    letter-spacing: 0.09em;
+}
+
+/* ----------- mobile footer ----------- */
+
+.logo{
+    margin: 0;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    text-align: left;
+}
+.logo img{
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+.index_icon{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.logo li i{
+    font-size: 16px;
+    margin-right: 15px;
+}
+
+.logo li a{
+    display: none;
+}
+
+.footer_font{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.logo .footer_el li{
+}
+
+.logo .sub{
+    display: inline-block;
+    font-weight: 0;
+    font-size: 14px;
+    color: white;
+    line-height: 0;
+    margin-right: 10px;
+}
+
+.serve-text{
+    display: none;
+}
+
 }

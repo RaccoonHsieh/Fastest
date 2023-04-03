@@ -65,12 +65,19 @@
     color: rgb(45, 179, 255);
 }
 
-.topbar_el li i{
+.topbar_icon{
     font-size: 25px;
     cursor: pointer;
 }
 
-.topbar_el li i:hover{
+.topbar_icon ul{
+    margin-top: 13px;
+}
+
+.topbar_icon li{
+}
+
+.topbar_icon li:hover{
     color: rgb(45, 179, 255);
 }
 
@@ -160,43 +167,50 @@
 
 .third{
     background-color: rgb(242, 242, 242);
-    max-width: 100%;
+    width: 100vw;
     height: 600px;
     padding-top: 170px;
 }
 
 .third-text{
-    min-width: 1200px;
+    /* border: 3px solid red; */
+    max-width: 1200px;
     background-color: white;
-    font-style: normal;
-    display: flex;
-    position: absolute;
-    right: 50%;
-    transform: translate(50%);
+    margin: 0 auto;
 }
 
 .third-text ul{
+    display: flex;
 }
 
-.third-text img{
+.third-text li:nth-child(1){
+    margin-right: 90px;    
+}
+
+.third-text li img{
     width: 600px;
 }
 
-.thied-text-sub{
-    margin-left: 60px;
+.third-text-sub h1{
+    position: absolute;
+    left: 100px;
+    top: 1250px;
+    font-size: 100px;
+    -webkit-text-stroke: 1.5px rgb(0, 0, 0) ;
+    -webkit-text-fill-color: transparent;
 }
 
-.thied-text-sub h2{
+.third-text-sub h2{
     margin-top: 80px;
     margin-bottom: 20px;
 }
 
-.thied-text-sub p{
+.third-text-sub p{
     width: 450px;
     margin-bottom: 50px;
 }
 
-.thied-text-sub a{
+.third-text-sub a{
     display: block;
     background-color: black;
     width: 220px;
@@ -208,7 +222,7 @@
     text-align: center;
 }
 
-.thied-text-sub a i{
+.third-text-sub a i{
     margin-left: 10px;
 }
 
@@ -222,7 +236,7 @@
     background-image: url(../img/backgroundimg/01.jpg);
     background-position: bottom 50% right 40%;
     position: relative;
-    max-width: 100%;
+    width: 100vw;
     height: 400px;
 }
 
@@ -242,7 +256,7 @@
 
 .location{
     background-image: linear-gradient(270deg, rgb(10, 36, 55) 0%,rgba(255, 255, 255, 0.703) 50%, rgba(255, 255, 255, 0) 100%);
-    width: 100%;
+    width: 100vw;
     height: 400px;
 }
 
@@ -327,3 +341,252 @@ a.back-to-top{
     right: 30px;
     bottom: 30px;
 }
+
+/* ############## mobile ############## */
+@media screen and (max-width: 414px){
+
+.one{
+    background-size: cover;
+    background-position: right 42% top 70px;
+}
+
+.topbar{
+    background-color: #ffffff;
+    height: 70px;
+}
+
+.topbar_el{
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+.topbar img{
+    height: 30px;
+    padding: 0;
+    margin-top: 22px;
+    margin-left: 30px;
+
+}
+
+.nav_el{
+    position: absolute;
+    background-color: #e6e6e6;
+    width: 100vw;
+    height: 100vh;
+    top: 70px;
+    right: 0;
+    display: none;
+}
+
+
+.burger{
+    /* border: 3px solid red; */
+    background-color: #000000;
+    width: 20px;
+    height: 2px;
+    margin: auto;
+    position: absolute;
+    top: 35px;
+    right: 25px;
+}
+
+.burger::before, .burger::after{
+    content: "";
+    background-color: #000000;
+    width: 20px;
+    height: 2px;
+    margin: auto;
+    position: absolute;
+    transition: .5s .05s ease-in-out;
+    /* right: 25px; */
+}
+
+.burger::after{
+    top: -6px;
+}
+
+.burger::before{
+    top: 6px;
+}
+
+.burger.openbutton{
+    transition: .1s .05s ease-in-out;
+    width: 0;
+}
+
+.burger.open:before {
+    transform: rotate(-140deg);
+    top: 0;
+    right: 0;
+}
+.burger.open:after {
+    transform: rotate(140deg);
+    top: 0;
+    right: 0;
+}
+
+.nav_el ul{
+    flex-direction: column;
+    align-items: end;
+    margin-right: 40px;
+    margin-top: 40px;
+    gap: 10px;
+}
+
+.nav_el li::after{
+    margin-top: 65px;
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 330px;
+    height: 1.4px;
+    background-color: rgba(20, 20, 20, 0.233);
+    margin-right: 40px;
+}
+
+.topbar_icon ul{
+    display: flex;
+    align-items: end;
+    opacity: 1;
+}
+
+.topbar_icon li{
+}
+
+/* ----------- index標題 ----------- */
+
+.title-1{
+    margin: 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.title-1 h1{
+    font-weight: 400;
+}
+
+
+.title-1 h2{
+    margin-top: -5px;
+    color: #000000;
+}
+
+.title-1 a{
+    opacity: 0;
+    margin-top: 220px;
+}
+
+/* ----------- 首頁第二格(車款介紹) ----------- */
+
+.two{
+    margin-top: 50px;
+}
+
+.two h3{
+    margin-top: 0px;
+}
+
+.prod1{
+    margin-top: 60px;
+    overflow-y: hidden;
+}
+
+/* ----------- 首頁第三格 ----------- */
+
+.third{
+    padding-top: 70px;
+    
+}
+.third-text{
+    /* border: 1px solid rgba(0, 0, 0, 0.5); */
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.third-text ul{
+    flex-direction: column;
+}
+
+.third-text li{
+    margin-right: 20px;
+}
+
+.third-text li:nth-child(1){
+    margin: 0;    
+}
+
+.third-text li img{
+    width: 100%;
+}
+
+.third-text-sub h1{
+    font-size: 50px;
+    top: 1040px;
+    left: 30px;
+    opacity: .3;
+}
+
+.third-text-sub h2{
+    margin-left: 25px;
+    margin-top: 30px;
+}
+
+.third-text-sub p{
+    width: 90%;
+    margin-left: 25px;
+    margin-bottom: 30px;
+}
+
+.third-text-sub a{
+    width: 150px;
+    height: 50px;
+    font-size: 14px;
+    line-height: 50px;
+    margin-left: 25px;
+    margin-bottom: 30px;
+}
+
+/* ----------- 首頁第四格 ----------- */
+
+.location{
+    background-image: linear-gradient(270deg, rgb(10, 36, 55) 0%,rgba(255, 255, 255, 0.481) 100%);
+}
+
+.location h2{
+    padding-top: 50px;
+}
+
+.menu{
+    margin-top: -40px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu select{
+    width: 200px;
+    font-size: 15px;
+    opacity: .5;
+
+}
+
+button{
+    width: 120px;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+
+/* ----------- introduce back to top ----------- */
+a.back-to-top{
+
+}
+
+.back-to-top{
+    width: 30px;
+    right: 15px;
+    bottom: 15px;
+}
+
+}
+

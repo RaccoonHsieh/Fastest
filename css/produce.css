@@ -6,7 +6,7 @@
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: left bottom;
-    max-width: 100%;
+    width: 100vw;
     height: 600px;
 }
 
@@ -75,15 +75,23 @@
     color: rgb(45, 179, 255);
 }
 
-.topbar_el li i{
+.topbar_icon{
     font-size: 25px;
     cursor: pointer;
 }
 
-.topbar_el li i:hover{
+.topbar_icon ul{
+    margin-top: 13px;
+}
+
+.topbar_icon li{
+}
+
+.topbar_icon li:hover{
     color: rgb(45, 179, 255);
 }
 
+/* ----------- produce banner ----------- */
 .produce-title-1{
     max-width: 1200px;
     margin: 0 auto;
@@ -98,6 +106,10 @@
     width: 40%;
     margin-bottom: 60px;
     /* line-height: 1.6; */
+}
+
+.produce_p{
+    display: none;
 }
 
 .produce-title-1 a{
@@ -147,7 +159,7 @@
 
 .produce-card{
     margin-top: 150px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .produce-card .produce-card-search{
@@ -173,20 +185,24 @@
 }
 
 .produce-card ul{
-    height: 500px;
+    /* border: 3px solid red; */
+    height: 1400px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 60px;
+    gap: 50px;
+    margin-top: 30px;
 }
 
 .produce-card li{
+    height: 430px;
     flex-basis: 300px;
     border-radius: 20px;
     background-color: white;
     box-shadow: 10px 10px 20px rgb(164, 164, 164, .6);
     text-align: center;
+    transition: .4s .1s;
     /* align-self: center; */
 }
 
@@ -213,9 +229,8 @@
 }
 
 .produce-card li:hover{
-    height: 460px;
-    transition: transform .4s ease-in-out;
-    transform: scaleY(1);
+    /* height: 460px; */
+    transform: scaleY(1.1);
 }
 
 .produce-card li:hover .produce-card-img{
@@ -237,7 +252,8 @@
 }
 
 .produce-button{
-    margin-bottom: 150px;
+    margin-bottom: 130px;
+    margin-top: 150px;
 }
 
 .produce-button ul{
@@ -310,4 +326,225 @@ a.back-to-top{
     width: 50px;
     right: 30px;
     bottom: 30px;
+}
+
+/* ############## mobile ############## */
+@media screen and (max-width: 414px){
+
+/* ----------- topbar ----------- */
+
+.topbar{
+    background-color: #ffffff;
+    height: 70px;
+}
+
+.topbar_el{
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+.topbar img{
+    height: 30px;
+    padding: 0;
+    margin-top: 22px;
+    margin-left: 30px;
+
+}
+
+.nav_el{
+    position: absolute;
+    background-color: #e6e6e6;
+    width: 100vw;
+    height: 100vh;
+    top: 70px;
+    right: 0;
+    display: none;
+}
+
+
+.burger{
+    /* border: 3px solid red; */
+    background-color: #000000;
+    width: 20px;
+    height: 2px;
+    margin: auto;
+    position: absolute;
+    top: 35px;
+    right: 25px;
+}
+
+.burger::before, .burger::after{
+    content: "";
+    background-color: #000000;
+    width: 20px;
+    height: 2px;
+    margin: auto;
+    position: absolute;
+    transition: .5s .05s ease-in-out;
+    /* right: 25px; */
+}
+
+.burger::after{
+    top: -6px;
+}
+
+.burger::before{
+    top: 6px;
+}
+
+.burger.openbutton{
+    transition: .1s .05s ease-in-out;
+    width: 0;
+}
+
+.burger.open:before {
+    transform: rotate(-140deg);
+    top: 0;
+    right: 0;
+}
+.burger.open:after {
+    transform: rotate(140deg);
+    top: 0;
+    right: 0;
+}
+
+.nav_el ul{
+    flex-direction: column;
+    align-items: end;
+    margin-right: 40px;
+    margin-top: 40px;
+    gap: 10px;
+}
+
+.nav_el li::after{
+    margin-top: 65px;
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 330px;
+    height: 1.4px;
+    background-color: rgba(20, 20, 20, 0.233);
+    margin-right: 40px;
+}
+
+.topbar_icon ul{
+    display: flex;
+    align-items: end;
+    opacity: 1;
+}
+
+.topbar_icon li{
+}
+
+/* ----------- produce banner ----------- */
+
+.produce-img img{
+    display: none;
+}
+.produce-title-1{
+    margin-left: 20px;
+}
+
+.produce-title-1 h1{
+    font-weight: 400;
+}
+
+.produce-title-1 p{
+    display: none;
+    margin-bottom: 0;
+}
+
+.produce-title-1 .produce_p{
+    display: block;
+    font-size: 16px;
+    width: 65%;
+    line-height: 1.4;
+}
+
+.produce-title-1 a{
+    width: 150px;
+    height: 50px;
+    font-size: 14px;
+    line-height: 50px;
+    margin-top: 50px;
+}
+
+/* ----------- produce card ----------- */
+
+.produce-card{
+    margin-top: 30px;
+}
+
+.produce-card .produce-card-search{
+    margin-left: 40px;
+}
+
+.produce-card .produce-card-search label{
+    margin-left: 10px;
+}
+
+.produce-card-search .h2_sub{
+    font-size: 14px;
+    margin-top: 3px;
+}
+
+.produce-card .produce-card-search select{
+    width: 120px;
+    height: 25px;
+    font-weight: 0;
+    font-size: 12px;
+}
+
+.produce-card ul{
+    height: 500px;
+    justify-content: flex-start;
+    gap: 30px;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+.produce-card li{
+    height: 230px;
+    flex-basis: 150px;
+    border-radius: 10px;
+    border: 2px solid rgba(230, 230, 230, 0.5);
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+}
+
+.produce-card li:nth-child(9){
+}
+
+.produce-card img{
+    height: 70px;
+    margin-top: 50px;
+}
+
+.produce-card h3{
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+.produce-card p{
+    margin-top: 10px;
+}
+
+.produce-card .produce-card-img{
+}
+
+.produce-card li:hover{
+    /* height: 460px; */
+    transform: scaleY(1.1);
+}
+
+.produce-card li:hover .produce-card-img{
+    height: 30px;
+    margin: 0 auto;
+    margin: 10px 5px 10px;
+}
+
+.produce-card li:hover > img{
+    margin-top: 25px;
+}
+
 }

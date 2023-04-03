@@ -16,11 +16,13 @@
 </head>
 <body>
     <div id="top"></div>
-    <!----------- produce topbar+第一格 ----------->
+    <!----------- topbar ----------->
     <div class="produce">
         <nav class="topbar">
             <div class="topbar_el">
             <a href="index.html" class="logo_el"><img src="img/logo/logo_1.svg" alt=""></a>
+            <div class="burger" id="burger_el"></div>
+            <div class="nav_el">
             <ul>
                 <li><a href="index.html" class="bar">首頁</a></li>
                 <li><a href="introduce.html" class="bar">車款介紹</a></li>
@@ -29,17 +31,27 @@
                 <li><a href="apps.html" class="bar">App介紹</a></li>
                 <li><a href="aboutus.html" class="bar">關於Fastest</a></li>
                 <li><a href="produce.html" class="bar">生活精品</a></li>
-                <li><i class="bi bi-chat-dots"></i></li>
-                <li><i class="bi bi-person"></i></li>
             </ul>
             </div>
+            <div class="topbar_icon">
+                <ul>
+                    <li><i class="bi bi-chat-dots"></i></li>
+                    <li><i class="bi bi-person"></i></li>
+                </ul>
+            </div>
+            </div>
         </nav>
+
+    <!----------- produce banner ----------->
         <div class="produce-img">
             <img src="img/banner/06.png" alt="">
         </div>
         <div class="produce-title-1">
             <h1>生活精品</h1>
-            <p>提供各種高品質、可靠的汽車配件，包括輪胎、煞車系統、引擎零件、燈具等等，適用於各種車型。配件均來自於知名品牌和生產商，保證品質和性能方面都有優秀的表現。</p>
+            <p>提供各種高品質的汽車配件，包括輪胎、煞車系統、引擎零件等等，適用於各種車型。配件均來自於知名品牌和生產商，保證品質和性能方面都有優秀的表現。</p>
+
+            <p class="produce_p">提供各種高品質的汽車配件，輪胎、煞車系統、引擎零件</p>
+
             <a href="">看更多商品<i class="bi bi-chevron-right"></i></a>
         </div>  
         </div>
@@ -85,8 +97,6 @@
                     <img class="produce-card-img" src="img/Accessories/06.svg" alt="">
                     <img class="produce-card-img" src="img/Accessories/07.svg" alt="">
                 </li>
-            </ul>
-            <ul>
                 <li>
                     <img src="img/Accessories/01.png" alt="">
                     <h3>車用記憶棉靠墊</h3>
@@ -108,8 +118,6 @@
                     <img class="produce-card-img" src="img/Accessories/06.svg" alt="">
                     <img class="produce-card-img" src="img/Accessories/07.svg" alt="">
                 </li>
-            </ul>
-            <ul>
                 <li>
                     <img src="img/Accessories/01.png" alt="">
                     <h3>車用記憶棉靠墊</h3>
@@ -136,7 +144,7 @@
     </div>
 
     <!----------- produce button ----------->
-    <div class="produce-button-inside">
+    <!-- <div class="produce-button-inside">
         <div class="produce-button">
             <ul>
                 <li>
@@ -149,18 +157,20 @@
                 </li>
             </ul>
      </div>
-    </div>
+    </div> -->
 
     <!----------- produce back to top ----------->
-    <a href="#top" class="back-to-top"><img src="img/logo/backtotop.svg" alt=""></a>   
+    <!-- <a href="#top" class="back-to-top"><img src="img/logo/backtotop.svg" alt=""></a>    -->
 
     <!----------- produce footer ----------->
-    <div class="footer"></div>
+    <!-- <div class="footer"></div>
     
     <script>
         $(function(){
             $('.footer').load('default.html .footer')
             })
-    </script>
+    </script> -->
+
+    <script src="js/produce.js"></script>
 </body>   
 </html>
