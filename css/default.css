@@ -10,21 +10,18 @@ body{
 h1{
     font-weight: 550;
     font-size: 45px;
-    line-height: 126%;
     letter-spacing: 0.09em;
 }
 
 h2{
     font-weight: 400;
     font-size: 25px;
-    line-height: 53px;
     letter-spacing: 0.09em;
 }
 
 .h2_sub{
     font-weight: 500;
     font-size: 22px;
-    line-height: 126%; 
     letter-spacing: 0.09em;
 }
 
@@ -32,16 +29,89 @@ h2{
 h3{
     font-weight: 400;
     font-size: 18px;
-    line-height: 100%;
     letter-spacing: 0.09em;
 }
 
 p{
     font-weight: 350;
     font-size: 18px;
-    line-height: 136.52%;
     letter-spacing: 0.09em;
 }
+/* ----------- topbar ----------- */
+.topbar{
+    background-color: #ffffff;
+    height: 80px;
+}
+
+.topbar_icon_mobile{
+    display: none;
+}
+
+.topbar_el{
+    /* border: 3px solid red; */
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.topbar img{
+    height: 40px;
+    padding-top: 15px;
+}
+
+.topbar ul{
+    display: flex;
+    gap: 30px;
+}
+
+.topbar li{
+    flex-grow: 1;
+}
+
+.bar{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 60px;
+}
+
+.bar::after{
+    position: absolute;
+    top: 35px;
+    left: 0;
+    display: block;
+    content: "";
+    width: 0%;
+    height: 3.5px;
+    background-color: rgb(45, 179, 255);
+    transition: .2s .1s;
+}
+
+.bar:hover::after{
+    width: 100%;
+}
+
+.bar:hover{
+    color: rgb(45, 179, 255);
+}
+
+.topbar_icon{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.topbar_icon ul{
+    margin-top: 13px;
+}
+
+.topbar_icon li:hover{
+    color: rgb(45, 179, 255);
+}
+
 
 /* ----------- footer ----------- */
 .footer{
@@ -130,27 +200,23 @@ body{
     font-family: Noto Sans TC;
     font-style: normal;
     letter-spacing: .08rem;
-
 }
 
 h1{
     font-weight: 550;
     font-size: 40px;
-    line-height: 126%;
     letter-spacing: 0.09em;
 }
 
 h2{
     font-weight: 400;
     font-size: 20px;
-    line-height: 53px;
     letter-spacing: 0.09em;
 }
 
 .h2_sub{
     font-weight: 500;
     font-size: 18px;
-    line-height: 126%; 
     letter-spacing: 0.09em;
 }
 
@@ -158,16 +224,125 @@ h2{
 h3{
     font-weight: 400;
     font-size: 16px;
-    line-height: 100%;
     letter-spacing: 0.09em;
 }
 
 p{
     font-weight: 350;
     font-size: 14px;
-    line-height: 136.52%;
     letter-spacing: 0.09em;
 }
+
+/* ----------- mobile topbar ----------- */
+.topbar{
+    background-color: #ffffff;
+    height: 70px;
+}
+
+.topbar_el{
+    justify-content: flex-start;
+    margin: 0 auto;
+    gap: 70px;
+}
+
+.topbar img{
+    height: 25px;
+    padding: 0;
+    margin-top: 27px;
+}
+
+.nav_el{
+    position: absolute;
+    background-color: #e6e6e6;
+    width: 100vw;
+    height: 100vh;
+    top: 70px;
+    right: 0;
+    display: none;
+}
+
+.burger{
+    background-color: #000000;
+    width: 20px;
+    height: 2px;
+    margin: auto;
+    position: absolute;
+    top: 35px;
+    right: 25px;
+}
+
+.burger::before, .burger::after{
+    content: "";
+    background-color: #000000;
+    width: 20px;
+    height: 2px;
+    margin: auto;
+    position: absolute;
+    transition: .5s .05s ease-in-out;
+}
+
+.burger::after{
+    top: -6px;
+}
+
+.burger::before{
+    top: 6px;
+}
+
+.burger.openbutton{
+    transition: .1s .05s ease-in-out;
+    width: 0;
+}
+
+.burger.open:before {
+    transform: rotate(-140deg);
+    top: 0;
+    right: 0;
+}
+.burger.open:after {
+    transform: rotate(140deg);
+    top: 0;
+    right: 0;
+}
+
+.nav_el ul{
+    flex-direction: column;
+    align-items: end;
+    margin-right: 40px;
+    margin-top: 40px;
+    gap: 10px;
+}
+
+.nav_el li::after{
+    margin-top: 65px;
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 330px;
+    height: 1.4px;
+    background-color: rgba(20, 20, 20, 0.233);
+    margin-right: 40px;
+}
+
+.topbar_icon{
+    display: none;
+}
+
+.topbar_icon_mobile{
+    display: block;
+}
+
+.topbar_icon_mobile ul{
+    margin-top: 25px;
+    margin-left: 20px;
+    gap: 0;
+}
+
+.topbar_icon_mobile ul li i{
+    font-size: 20px;
+    margin-left: 10px;
+}
+
 
 /* ----------- mobile footer ----------- */
 
@@ -204,9 +379,6 @@ p{
     flex-wrap: wrap;
     margin-top: 30px;
     cursor: pointer;
-}
-
-.logo .footer_el li{
 }
 
 .logo .sub{

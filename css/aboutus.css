@@ -1,78 +1,27 @@
 /* ----------- about us 第一格 ----------- */
-.topbar{
-    background-color: #ffffff;
-    height: 80px;
-}
-
-.topbar_el{
-    /* border: 3px solid red; */
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
-}
-
-.topbar img{
-    height: 40px;
-    padding-top: 15px;
-}
-
-.topbar ul{
-    display: flex;
-    gap: 30px;
-}
-
-.topbar li{
-    flex-grow: 1;
-}
-
-.bar{
+.abc{
+    background-image: url(../img/banner/04.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 800px;
     position: relative;
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 60px;
-}
-
-.bar::after{
-    position: absolute;
-    top: 35px;
+    top: 0;
     left: 0;
-    display: block;
-    content: "";
-    width: 0%;
-    height: 3.5px;
-    background-color: rgb(45, 179, 255);
-    transition: .2s .1s;
 }
 
-.bar:hover::after{
-    width: 100%;
-}
-
-.bar:hover{
-    color: rgb(45, 179, 255);
-}
-
-.topbar_el li i{
-    font-size: 25px;
-    cursor: pointer;
-}
-
-.topbar_el li i:hover{
-    color: rgb(45, 179, 255);
-}
-
-.inside{
-    max-width: 1200px;
-    margin: 0 auto;
+.aboutus-img-one img{
+    position: absolute;
+    height: 60%;
+    top: 700px;
+    right: 0;
+    box-shadow: 15px 15px 30px rgba(11, 13, 30, .3);
 }
 
 .aboutus-title-1{
-    float: right;
-    margin-top: 400px;
+    position: absolute;
+    right: 120px;
+    top: 300px;
 }
 
 .aboutus-title-1 h1{
@@ -80,7 +29,7 @@
 }
 
 .aboutus-title-1 a{
-    display: inline-block;
+    display: block;
     background-color: rgb(45, 179, 255);
     width: 280px;
     height: 90px;
@@ -100,38 +49,6 @@
     color: white;
 }
 
-.aboutus-img-one{
-    margin-top: 50px;
-}
-
-/* .aboutus-img-one img:nth-child(1){
-    position: relative;
-    height: 700px;
-}
-
-.aboutus-img-one img:nth-child(2){
-    position: absolute;
-    height: 400px;
-    right: 80px;
-    top: 650px;
-    box-shadow: 15px 15px 30px rgba(11, 13, 30, .3);
-} */
-
-.aboutus-img-one{
-    background-image: url(../img/banner/04.jpg);
-    max-width: 1200px;
-    height: 800px;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.aboutus-img-one img{
-    /* border: 3px solid red; */
-    height: 400px;
-    margin-left: 800px;
-    margin-top: 90px;
-    box-shadow: 15px 15px 30px rgba(11, 13, 30, .3);
-}
 
 /* ----------- about us 第二格 ----------- */
 .aboutus-two{
@@ -149,12 +66,24 @@
     padding-top: 100px;
 }
 
-.aboutus-title-two p{
+.aboutus_pc_p{
     color: rgb(152, 152, 152);
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 20px;
     max-width: 35%;
+}
+
+.aboutus_mobile_h1{
+    display: none;
+}
+
+.aboutus_mobile_h2{
+    display: none;
+}
+
+.aboutus_mobile_p{
+    display: none;
 }
 
 .aboutus-title-two-two{
@@ -184,7 +113,6 @@
 
 .aboutus-img-three{
     position: relative;
-
 }
 
 .aboutus-img-three img:nth-child(1){
@@ -194,7 +122,6 @@
     z-index: 0;
     right: 0;
     top: -150px;
-
 }
 
 .aboutus-img-three img:nth-child(2){
@@ -212,7 +139,6 @@
     padding-top: 150px; 
 }
 
-
 .aboutus-title-3{
     display: flex;
     flex-direction:column ;
@@ -225,22 +151,20 @@
     letter-spacing: 13px;
 }
 
-
 .aboutus-title-3 h1{
     margin-bottom: 20px;
 }
-
-/* .aboutus-title-3 h1 span{
-    margin-bottom: 20px;
-    color: rgb(45, 179, 255);
-} */
 
 .aboutus-title-3 p{
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 20px;
-    max-width: 40%;
+    width: 35%;
     margin-top: 10px;
+}
+
+.aboutus-title-3 h2{
+    display: none;
 }
 
 .aboutus-title-3 a{
@@ -267,7 +191,8 @@
 
 /* ----------- about us 第四格 ----------- */
 .aboutus-four{
-    margin: 130px 0;}
+    margin: 130px 0;
+}
 
 .inside-6-4{
     /* border: 3px solid red; */
@@ -276,7 +201,6 @@
 }
 
 .aboutus-title-4{
-    /* margin-top: 200px; */
     text-align: center;
     color: black;
 }
@@ -297,6 +221,10 @@
     margin-bottom: 20px;
     margin: 0 auto;
     max-width: 70%;
+}
+
+.aboutus-title-4 h2{
+    display: none;
 }
 
 .about-us-img-4{
@@ -338,11 +266,14 @@
     margin-left: 800px;
 }
 
-
 .aboutus-title-five h3{
     margin-bottom: 10px;
     font-weight: 250;
     letter-spacing: 13px;
+}
+
+.color-text{
+    color: rgb(45, 179, 255);
 }
 
 .aboutus-title-five h1{
@@ -382,6 +313,10 @@
     color: black;
 }
 
+.inside-six-five h2{
+    display: none;
+}
+
 /* ----------- aboutus back to top ----------- */
 a.back-to-top{
     display: block;
@@ -396,7 +331,335 @@ a.back-to-top{
     bottom: 30px;
 }
 
+/* ############## mobile ############## */
+@media screen and (max-width: 414px){
+
+/* ----------- about us 第一格 ----------- */
+.abc{
+    height: 600px;
+    background-size: cover;
+    background-position: right -250px top 0;
+    position: static;
+}
+
+.aboutus-title-1{
+    position: static;
+}
+
+.aboutus-title-1 h1{
+    /* border: 3px solid red; */
+    font-size: 30px;
+    font-weight: 400;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.aboutus-title-1 a{
+    /* border: 3px solid red; */
+    width: 150px;
+    height: 50px;
+    font-size: 14px;
+    line-height: 50px;
+    margin: 0 auto;
+}
+
+.aboutus-img-one img{
+    position: static;
+    display: none;
+}
+    
+/* ----------- about us 第二格 ----------- */
+.aboutus-two{
+    background-image: none;
+    background-color: rgb(243, 243, 243);
+    width: 100vw;
+    height: 500px;
+}
+
+.aboutus-title-two{
+    padding-top: 60px;
+}
+
+.aboutus_pc_p{
+    display: none;
+
+}
+
+.aboutus_mobile_h1{
+    display: block;
+    font-size: 25px;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.aboutus_mobile_line::before, .aboutus_mobile_line::after{
+    content: "";
+    display: block;
+    width: 110px;
+    height: 1px;
+    background-color: #d0d0d0;
+}
+
+.aboutus_mobile_line::before{
+    margin-left: 80px;
+}
+
+.aboutus_mobile_line::after{
+    margin-left: 222px;
+    margin-bottom: 10px;
+}
+
+.aboutus_mobile_slash::before, .aboutus_mobile_slash::after{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 1px;
+    background-color:  #d0d0d0;
+}
+
+.aboutus_mobile_slash::before{
+    margin-left: 188px;
+    transform: rotate(-150deg);
+    margin-top: 5px;
+}
+
+.aboutus_mobile_slash::after{
+    margin-left: 205px;
+    transform: rotate(150deg);
+}
+
+.aboutus_mobile_h2{
+    display: block;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.aboutus_mobile_p{
+    display: block;
+    color: rgb(152, 152, 152);
+    max-width: 100%;
+    line-height: 1.5;
+    margin: 0 60px;
+    margin-bottom: 20px;
+}
+
+.aboutus-title-two-two{
+    justify-content: center;
+}
+
+.aboutus-title-two-two img{
+    height: 80px;
+    margin-top: 10px;
+}
+
+/* ----------- about us 第三格 ----------- */
+.aboutus_mobile_out{
+    /* border: 3px solid red; */
+    margin: 0 auto;
+    background-image: url(../img/backgroundimg/06.jpg);
+    background-position: right -100px top 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90%;
+    height: 400px;
+    margin-top: 50px;
+}
+
+.aboutus-bgi-three{
+    background-image: none;
+    height: 0;
+}
+
+.aboutus-img-three{
+    position: static;
+}
+
+.aboutus-img-three img:nth-child(1){
+    position: static;
+    display: none;
+}
+
+.aboutus-img-three img:nth-child(2){
+    position: static;
+    display: none;
+}
+
+.inside-6-3{
+    padding: 0;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.aboutus-title-3 h3{
+    margin-bottom: 6px;
+    letter-spacing: 2px;
+    font-weight: normal;
+    font-size: 14px;
+    color: black;
+}
+
+.aboutus-title-3 h1{
+    font-weight: normal;
+    font-size: 18px;
+    color: black;
+    margin-bottom: 0;
+}
 
 .color-text{
-    color: rgb(45, 179, 255);
+    color: black;
+}
+
+.aboutus-title-3 p{
+    display: none;
+}
+
+.aboutus-title-3 a{
+    display: none;
+}
+
+.aboutus-title-3 h2{
+    border: 3px solid red;
+    display: block;
+    color: rgb(163, 163, 163);
+    line-height: 0;
+    font-size: 14px;
+    margin-right: 20px;
+    font-weight: normal;
+}
+
+/* ----------- about us 第四格 ----------- */
+.aboutus-four{
+    margin: 0;
+}
+
+.aboutus_mobile_out_img{
+    /* border: 3px solid red; */
+    margin: 0 auto;
+    background-image: url(../img/backgroundimg/03.jpg);
+    background-position: right -100px top 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90%;
+    height: 400px;
+    margin-top: 60px;
+}
+
+.aboutus-title-4{
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.aboutus-title-4 h3{
+    margin-bottom: 6px;
+    letter-spacing: 2px;
+    font-weight: normal;
+    font-size: 14px;
+    color: black;
+}
+
+.aboutus-title-4 h1{
+    font-weight: normal;
+    font-size: 18px;
+    color: black;
+    margin-bottom: 0;
+}
+
+.aboutus-title-4 p{
+    display: none;
+}
+
+.about-us-img-4{
+    display: none;
+}
+
+.about-us-img-4_mobile{
+    display: block;
+}
+
+.aboutus-title-4 h2{
+    border: 3px solid red;
+    display: block;
+    color: rgb(163, 163, 163);
+    line-height: 0;
+    font-weight: normal;
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+/* ----------- about us 第五格 ----------- */
+.aboutus-bgi-five{
+    background-image: none;
+    height: 500px;
+}
+
+.aboutus_mobile_out_img_2{
+    margin: 0 auto;
+    background-image: url(../img/backgroundimg/04.jpg);
+    background-position: right -100px top 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90%;
+    height: 400px;
+}
+
+.aboutus-title-five{
+    padding-top: 0;
+    /* display: block; */
+}
+
+.inside-six-five{
+    /* border: 3px solid red; */
+    max-width: 100%;
+    margin-left: 0;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.aboutus-title-five h3{
+    margin-bottom: 6px;
+    letter-spacing: 2px;
+    font-weight: normal;
+    font-size: 14px;
+    color: black;
+}
+
+.aboutus-title-five h1{
+    font-weight: normal;
+    font-size: 18px;
+    color: black;
+    margin-bottom: 0;
+}
+
+.aboutus-title-five p{
+    display: none;
+}
+
+.aboutus-title-five a{
+    display: none;
+}
+
+.inside-six-five h2{
+    border: 3px solid red;
+    display: block;
+    color: rgb(163, 163, 163);
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 0;
+}
+
+.inside-six-five i{
+    margin-left: 5px;
+}
+
+/* ----------- introduce back to top ----------- */
+
+.back-to-top{
+    width: 30px;
+    right: 15px;
+    bottom: 15px;
+}
+
 }
