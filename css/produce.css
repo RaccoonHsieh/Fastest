@@ -22,17 +22,17 @@
 .produce-title-1{
     max-width: 1200px;
     margin: 0 auto;
-    margin-top: 90px;
+    margin-top: 110px;
 }
 
 .produce-title-1 h1{
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .produce-title-1 p{
     width: 40%;
     margin-bottom: 60px;
-    /* line-height: 1.6; */
+    line-height: 1.3;
 }
 
 .produce_p{

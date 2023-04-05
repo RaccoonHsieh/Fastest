@@ -36,7 +36,6 @@ scroll_block_el.addEventListener("scroll", function(){
             behavior:"smooth"
         });
     });
-    
 };
 
 /*
@@ -59,6 +58,27 @@ $(document).ready(function() {
     });
   });
   */
+
+// ------- introduce 第五格 ------
+
+let btn_img = document.getElementsByClassName('btn_img');
+let img_el = document.getElementsByClassName('img_el');
+let index_last = 0;
+
+$(window).on('load', function(){
+    $('.btn_img').click(function(){
+        let Img_el_Index = $(this).index();
+
+        if(index_last != Img_el_Index){
+            $('.img_el').eq(index_last).fadeOut();
+            $('.img_el').eq(Img_el_Index).fadeIn();
+        }else{
+            $('.img_el').eq(Img_el_Index).fadeIn();
+        }
+        index_last = Img_el_Index;
+    });
+});
+
 
 // ------- tab功能 ------
 let tabs_item_no1 = document.getElementsByClassName("tabs_item")[0];
@@ -91,3 +111,4 @@ document.querySelectorAll('[data-tabs-path]').forEach(function(item){
         parent.querySelector('[data-tabs-target= '+this.getAttribute('data-tabs-path')+']').classList.add('isactive')
     });
 });
+

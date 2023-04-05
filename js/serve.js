@@ -1,22 +1,3 @@
-//----------- 首頁第二格 -----------
-$(window).on('load', function(){
-    $('.prod_el').mousemove(function(){
-        $('.prod_el').css({opacity: .6});
-        $(this).css({opacity: 1})
-    });
-
-    $('.prod_el').mouseleave(function(){
-        $('.prod_el').css({opacity: 1})
-    });
-});
-
-//----------- 首頁第四格 -----------
-$('.map_search').click(function(){
-    $('.bgi').animate({height: '920px'}, 500),
-    $('.location').animate({height: '920px'}, 500),
-    $('.map').animate({opacity: 1}, 700);
-});
-
 //------ mobile ------
 let viewport = $(window).width();
 
@@ -43,5 +24,3 @@ $(window).on('load', function(){
         });
     }
 });
-
-
