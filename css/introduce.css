@@ -382,11 +382,10 @@
 }
 
 /* ----------- introduce 第六格 ----------- */
-.ddd{
-    /* border: 3px solid red; */
+/* .ddd{
     max-width: 1200px;
     margin: 0 auto;
-}
+} */
 
 .six{
     background-color: rgb(230, 230, 230);
@@ -458,7 +457,7 @@
 }
 
 .tabs_content p{
-    width: 50%;
+    width: 40%;
     margin: 0 auto;
     margin-top: 30px;
     font-size: 16px;
@@ -467,9 +466,10 @@
 }
 
 .tabs_content img{
-    float: left;
+    display: block;
+    margin:auto;
     transform: rotateY(180deg);
-    width: 800px;
+    max-width: 800px;
     margin-top: 100px;
 }
 
@@ -480,6 +480,7 @@
     height: 80px;
     display: flex;
     justify-content: center;
+    margin-top: 100px;
 }
 
 .six-button h2{
