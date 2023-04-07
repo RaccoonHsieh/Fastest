@@ -94,23 +94,23 @@
 
 /* ----------- apps QA ----------- */
 .apps-qa-wrapper{
-    position: relative;
+    /* position: relative; */
     background-color: rgb(236, 236, 236);
-    height: 1000px;
+    height: 700px;
     margin-top: -150px;
     z-index: -2;
 }
 
-.apps-qa-in{
-    /* border: 3px solid red; */
+/* .apps-qa-in{
+    border: 3px solid red;
     max-width: 1200px;
     margin: 0 auto; 
-}
+} */
 
 .apps-qa-inside{
-    /* border: 3px solid red; */
     max-width: 1200px;
     margin: 0 auto; 
+    /* margin-bottom: 70px; */
 }
 
 .apps-qa-inside ul{
@@ -118,21 +118,17 @@
     display: flex;
     justify-content: center;
     gap: 70px;
-    height: 300px;
+    padding-top: 50px;
 }
 
 .apps-qa-inside li{
-    height: 100px;
 }
 
 .apps-qa-inside h2{
     font-size: 20px;
-    padding-top: 200px;
 }
 
 .apps-qa-inside ul li a{
-    font-size: 20px;
-    padding-top: 20px;
     display: block;
     text-decoration: none;
     color: black;
@@ -140,12 +136,7 @@
     line-height: 100px;
 }
 
-.apps-qa-inside a:hover{
-    color:  rgb(45, 179, 255);
-}
-
 .apps-qa ul{
-    margin-top: 70px;
 }
 
 .apps-qa li{
@@ -154,12 +145,30 @@
     background-color: #fff;
 }
 
+.apps-qa-container{
+    /* border: 3px solid rgb(255, 0, 0); */
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.apps-qa-container li{
+    margin-bottom: 30px;
+}
+
 .apps-qa-text{
-    /* border: 3px solid rgb(72, 0, 255); */
     position: relative;
-    max-width: 800px;
+    max-width: 100%;
     margin: 0 auto; 
     cursor: pointer;
+    margin-top: 20px;
+}
+
+.apps-qa-head{
+    /* background-color: rgb(105, 194, 250); */
+    position: relative;
+    cursor: pointer;
+    padding-bottom: 20px;
 }
 
 .apps-qa-head::before, .apps-qa-head::after{
@@ -178,25 +187,37 @@
     /* border: 3px solid red; */
     transform: rotate(180deg);
     top: 20px;
-    left: 730px;
+    left: 650px;
 }
  
 .apps-qa-head::after {
     /* border: 3px solid rgb(17, 21, 108); */
     transform: rotate(-90deg);
     top: 20px;
-    left: 730px;   
+    left: 650px;   
 } 
 
 .apps-qa-head h2{
-    font-size: 20px;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-left: 30px;
     /* margin-top: 30px; */
 }
 
 .big-text{
-    color: rgb(169, 169, 169);
+    display: none;
+    color: rgb(195, 232, 255);
     font-size: 35px;
     margin-right: 20px;
+}
+
+.apps-qa-content{
+    /* border: 3px solid rgb(17, 21, 108); */
+    display: none;
+    background-color: #ffffff00;
+    border-bottom: 2px solid rgb(145, 145, 145);
+    max-width: 100%;
+    padding: 20px 0;
 }
 
 .apps-qa-content p{
@@ -205,16 +226,12 @@
     line-height: 1.6;
     padding-left: 50px;
     /* margin-top: 20px; */
-    width: 80%;
-    opacity: 1;
+    max-width: 80%;
 }
 
-
-
-
-
-
-
+.active::before {
+    transform: rotate(90deg);
+}
 
 /* ----------- apps back to top ----------- */
 a.back-to-top{
