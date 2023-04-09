@@ -38,27 +38,6 @@ scroll_block_el.addEventListener("scroll", function(){
     });
 };
 
-/*
-$(document).ready(function() {
-    $('#fullpage').fullpage({
-      anchors: ['section1', 'section2', 'section3'],
-      menu: '#myMenu',
-      afterLoad: function(anchorLink, index) {
-        if (index === 2) {
-          $('.section2').fadeIn();
-        } else if (index === 3) {
-          $('.section3').fadeIn();
-        }
-      }
-    //   onLeave: function(index, nextIndex, direction) {
-    //     if (nextIndex === 2 || nextIndex === 3) {
-    //       return false; // 阻止滾動
-    //     }
-    //   }
-    });
-  });
-  */
-
 // ------- introduce 第五格 ------
 
 let btn_img = document.getElementsByClassName('btn_img');

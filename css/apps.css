@@ -43,11 +43,11 @@
 }
 
 /* ----------- apps interface ----------- */
-/* .apps-interface-wrapper{
+.apps-interface-wrapper{
     background-color: rgb(255, 255, 255);
     max-width: 100%;
     margin: 0 auto;
-} */
+}
 
 .apps-interface{
     /* border: 3px solid red; */
@@ -71,32 +71,32 @@
 
 .slider {
     position: relative;
-    width: 100%;
+    max-width: 100%;
     overflow: hidden;
-  }
-  .slider ul {
-    /* border: 3px solid red; */
+    margin: 0 auto;
+    margin-bottom: 600px;
+
+}
+
+.slider ul {
+    border: 3px solid red;
     position: relative;
     display: flex;
-    margin: 0;
-    padding: 0;
-    list-style: none;
     width: 100%;
     left: 0;
-  }
-  .slider ul li {
-    /* border: 3px solid red; */
-    display: block;
-    margin: 0;
-    padding: 0;
-    width: 20%;
-  }
-  .slider img {
+}
+
+.slider ul li {
+    width: 50%;
+}
+
+.slider img {
     display: block;
     width: 100%;
-    height: auto;
-  }
-  .slider_prev, .slider_next {
+    height: 550px;
+}
+
+.slider_prev, .slider_next {
     position: absolute;
     top: 30px;
     /* transform: translateY(-50%); */
@@ -108,16 +108,16 @@
     text-align: center;
     line-height: 50px;
     font-size: 14px;
-  }
-  .slider_prev {
-    left: 0;
-  }
-  .slider_next {
-    right: 0;
-  }
-  
+}
 
-  
+.slider_prev {
+    left: 0;
+}
+
+.slider_next {
+    right: 0;
+}
+   
 /* 
 .slider_arrow ::before, .slider_arrow ::after{
     content: "";
@@ -145,11 +145,12 @@
     background-color: rgb(236, 236, 236);
     height: 700px;
     margin-top: -150px;
-    z-index: -2;
+    z-index: 999;
+    top: 0;
 }
 
 .apps-qa-in{
-    border: 3px solid red;
+    /* border: 3px solid red; */
     max-width: 1200px;
     margin: 0 auto; 
 }
@@ -181,9 +182,6 @@
     color: black;
     height: 100px;
     line-height: 100px;
-}
-
-.apps-qa ul{
 }
 
 .apps-qa li{

@@ -17,10 +17,10 @@ $(document).ready(function(){
 
 //----------- slider -----------
 $(document).ready(function() {
-    var slideCount = $('.slider ul li').length;//3
-    var slideWidth = $('.slider ul li').width();//33.333%
+    var slideCount = $('.slider ul li').length;
+    var slideWidth = $('.slider ul li').width();
     var slideHeight = $('.slider ul li').height();
-    var sliderUlWidth = slideCount * slideWidth;//100%
+    var sliderUlWidth = slideCount * slideWidth;
 
     $('.slider').css({ width: slideWidth, height: slideHeight });
     $('.slider ul').css({ width: sliderUlWidth});
