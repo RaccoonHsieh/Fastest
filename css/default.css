@@ -254,6 +254,7 @@ p{
 .nav_el{
     position: absolute;
     background-color: #e6e6e6;
+    z-index: 99;
     width: 100vw;
     height: 100vh;
     top: 70px;

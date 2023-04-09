@@ -130,11 +130,14 @@
     box-shadow: 10px 10px 20px rgb(164, 164, 164, .6);
     text-align: center;
     transition: .4s .1s;
-    /* align-self: center; */
 }
 
-.produce-card li::after{
-
+.card_inside{
+    position: relative;
+    top: 0px;
+    right: 0;
+    left: 0;
+    transition: .3s all;
 }
 
 .produce-card img{
@@ -155,24 +158,29 @@
     opacity: 0;
     height: 50px;
     margin: 0 auto;
-    margin: 20px 15px 0;
     cursor: pointer;
+    transition: opacity .1s;
+    margin-top: 20px;
 }
 
 .produce-card li:hover{
     /* height: 460px; */
-    transform: scaleY(1.1);
+    transform: scale(1.1);
 }
 
 .produce-card li:hover .produce-card-img{
+    position: relative;
     opacity: 1;
     height: 50px;
     margin: 0 auto;
-    margin: 20px 15px 50px;
+    margin-top: 20px;
+
 }
 
-.produce-card li:hover > img{
-    margin-top: 65px;
+.produce-card li:hover .card_inside{
+    position: absolute;
+    top: -40px;
+    left: 2px;
 }
 
 /* ----------- produce button ----------- */
@@ -365,7 +373,7 @@ a.back-to-top{
 
 .produce-card li:hover{
     /* height: 460px; */
-    transform: scaleY(1.1);
+    transform: scale(1.1);
 }
 
 .produce-card li:hover .produce-card-img{
@@ -373,6 +381,7 @@ a.back-to-top{
     margin: 0 auto;
     margin: 10px 5px 10px;
 }
+
 
 .produce-card li:hover > img{
     margin-top: 25px;

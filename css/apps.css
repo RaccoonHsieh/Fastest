@@ -43,19 +43,18 @@
 }
 
 /* ----------- apps interface ----------- */
-.apps-interface-wrapper{
+/* .apps-interface-wrapper{
     background-color: rgb(255, 255, 255);
     max-width: 100%;
-    height: 1000px;
     margin: 0 auto;
-}
+} */
 
 .apps-interface{
     /* border: 3px solid red; */
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
-    margin-top: 50px;
+    margin-top: -100px;
 }
 
 .apps-interface h3{
@@ -70,42 +69,90 @@
     margin-top: 50px;
 }
 
-.scroll-item img{
-    width: 300px;
-}
-
-#navigate {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1vw;
-}
-
-.apps-interface-wrapper{
+.slider {
     position: relative;
-    background-color: rgb(255, 255, 255);
-    clip-path: ellipse(100% 500px at 50% 10%);
-    max-width: 100%;
-    height: 600px;
-    margin: 0 auto;
-    margin-top: 350px;
-    z-index: -1;
+    width: 100%;
+    overflow: hidden;
+  }
+  .slider ul {
+    /* border: 3px solid red; */
+    position: relative;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    left: 0;
+  }
+  .slider ul li {
+    /* border: 3px solid red; */
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+  }
+  .slider img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .slider_prev, .slider_next {
+    position: absolute;
+    top: 30px;
+    /* transform: translateY(-50%); */
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid #000;
+    cursor: pointer;
+    text-align: center;
+    line-height: 50px;
+    font-size: 14px;
+  }
+  .slider_prev {
+    left: 0;
+  }
+  .slider_next {
+    right: 0;
+  }
+  
+
+  
+/* 
+.slider_arrow ::before, .slider_arrow ::after{
+    content: "";
+    position: absolute;
+    z-index: 999;
+    width: 40%;
+    height: 100%;
+    top: 0;
 }
+
+.slider_arrow ::before{
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+    left: 0;
+}
+
+.slider_arrow ::after{
+    background-image: linear-gradient(-90deg, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+    right: 0;
+} */
+
 
 /* ----------- apps QA ----------- */
 .apps-qa-wrapper{
-    /* position: relative; */
+    position: relative;
     background-color: rgb(236, 236, 236);
     height: 700px;
     margin-top: -150px;
     z-index: -2;
 }
 
-/* .apps-qa-in{
+.apps-qa-in{
     border: 3px solid red;
     max-width: 1200px;
     margin: 0 auto; 
-} */
+}
 
 .apps-qa-inside{
     max-width: 1200px;
