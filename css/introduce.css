@@ -1,16 +1,6 @@
 @import url(default.css);
 
 /* ----------- introduce 第一格 ----------- */
-/* .two_cover{
-    position: absolute;
-    background-image: url(../img/banner/02-2.png);
-    max-width: 80%;
-    height: 600px;
-    background-size: cover;
-    background-position: right top 25%;
-    z-index: 1;
-} */
-
 .two{
     background-image: url(../img/banner/02.jpg);
     max-width: 80%;
@@ -30,7 +20,6 @@
 .title-2 h2{
     font-size: 50pt;
     font-weight: 700;
-    line-height: 108.5%;
     letter-spacing: 0.11em;
     color: white;
     -webkit-text-stroke: 1.5px rgb(255, 255, 255) ;
@@ -62,7 +51,6 @@
     margin-left: 50px;
     margin-top: 15px;
     display: flex;
-
 }
 
 .one-inside-button a{
@@ -82,6 +70,12 @@
 .one-inside-button a:hover{
     background-color: rgb(45, 179, 255) ;
     color: white;
+}
+
+.one-inside-button h2{
+    font-size: 20px;
+    color: white;
+    margin-top: 0;
 }
 
 /* ----------- introduce 第二格 ----------- */
@@ -145,29 +139,39 @@
 } */
 
 /* ----------- introduce 第三格 ----------- */
+.two-3{
+    background-image: url(../img/Function/03-3.jpg);
+    width: 100vw;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right 0 bottom -245px;
+}
+
 .aaa{
     /* border: 3px solid red; */
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .two-3-text{
-    display: flex;
-    margin: 150px 0;
-    justify-content: center;
+    padding-top: 100px;
+}
+
+.two-3-text h1{
+    -webkit-text-stroke: 1.5px rgb(255, 255, 255) ;
+    -webkit-text-fill-color: transparent;
+    font-size: 90px;
 }
 
 .two-3-text h2{
-    margin-top: 100px;
-}
-
-.two-3-text p{
-    width: 80%;
     margin-top: 30px;
-    line-height: 1.3;
+    line-height: 1.4;
+    color: white;
 }
 
 .two-3 img{
+    display: none;
     width: 600px;
     margin-left: 100px;
 }
@@ -184,13 +188,13 @@
     top: 150px;
 }
 
-.list{
+.right_block .list{
     width: 8px;
     display: flex;
     flex-direction: column;
 }
 
-.list li{
+.right_block .list li{
     margin-bottom: 20px;
 }
 
@@ -269,32 +273,30 @@
 }
 
 /* ----------- introduce 第五格 ----------- */
-@import url("default.css");
 .ccc{
     /* border: 3px solid red; */
     max-width: 1200px;
     height: 700px;
     margin: 0 auto;
+    margin-bottom: 30px;
 }
 
 .two-5-text h1{
-    height: 60%;
-    writing-mode: vertical-lr;
+    margin-top: 80px;
+    /* writing-mode: vertical-lr; */
+    /* transform: rotate(180deg); */
     -webkit-text-stroke: 1.5px rgba(0, 0, 0, 0.4);
     -webkit-text-fill-color: transparent;
-    transform: rotate(180deg);
     color: rgb(217, 217, 217);
-    font-size: 60px;
+    font-size: 150px;
     position: absolute;
-    left: 30px;
+    left: 170px;
 }
 
 .two-5-img{
     position: relative;
     text-align: center;
-    top: 100px;
-}
-.two-5-img ul{
+    top: 150px;
 }
 
 .two-5-img li{
@@ -351,6 +353,7 @@
 .two-5-function ul{
     display: flex;
     justify-content: center;
+    margin-top: 170px;
 }
 
 .two-5-function li{
@@ -390,7 +393,7 @@
 .six{
     background-color: rgb(230, 230, 230);
     text-align: center;
-    max-width: 100%;
+    width: 100vw;
     height: 980px;
 }
 
@@ -399,9 +402,9 @@
 }
 
 .six-text p{
-    width: 60%;
+    max-width: 50%;
     margin: 30px auto;
-    line-height: 1.3;
+    line-height: 1.6;
 }
 
 .tabs_list{
@@ -426,11 +429,11 @@
 }
 
 .tabs_item:nth-child(1).tab2::before{
-    left: 160px;
+    left: 170px;
 }
 
 .tabs_item:nth-child(1).tab3::before{
-    left: 320px;
+    left: 340px;
 }
 
 .tabs_btn{
@@ -476,7 +479,6 @@
 }
 
 /* ----------- introduce 第六格下面按鈕 ----------- */
-
 .six-button{
     background-color: black;
     height: 80px;
@@ -486,7 +488,7 @@
 }
 
 .six-button h2{
-    margin-top: 15px;
+    margin-top: 25px;
     color: white;
 }
 
@@ -513,6 +515,12 @@
 .six-inside-button a:hover{
     background-color: rgb(45, 179, 255) ;
     color: white;
+}
+
+.six-inside-button h2{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    margin-top: 0;
 }
 
 /* ----------- introduce 第七格 ----------- */
@@ -577,4 +585,346 @@ a.back-to-top{
     width: 50px;
     right: 30px;
     bottom: 30px;
+}
+
+/* ############## mobile ############## */
+@media screen and (max-width: 414px){
+
+/* ----------- introduce 第一格 ----------- */
+.two{
+    max-width: 100%;
+    background-position: right -155px top 70px;
+}
+
+.title-2{
+    margin-top: 40px;
+    margin-left: 180px;
+}
+
+.title-2 h2{
+    font-size: 40px;
+    -webkit-text-stroke: 1px rgb(255, 255, 255) ;
+}
+
+.title-2 h1{
+    font-size: 65px;
+}
+
+/* ----------- introduce 第一格按鈕 ----------- */
+.one-button{
+    width: 100vw;
+    margin: 0 auto;
+    height: 70px;
+}
+
+.one-button h2{
+    font-size: 16px;
+}
+
+.one-inside-button{
+    margin-left: 0;
+}
+
+.one-inside-button a{
+    margin-left: 15px;
+    width: 90px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.one-inside-button h2{
+    font-size: 13px;
+}
+
+/* ----------- introduce 第二格 ----------- */
+.two-2{
+    background-position: right bottom, right 820px bottom 0px;
+    width: 100vw;
+}
+
+.two-2-icon{
+    /* border: 3px solid red; */
+    margin-left: 0px;
+    padding-top: 430px;
+    text-align: center;
+}
+
+.two-2-icon h1{
+    -webkit-text-stroke: 1px rgb(255, 255, 255) ;
+    font-size: 60px;
+    padding-top: 0px;
+}
+
+.two-2-icon h2{
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: left;
+    margin-top: 10px;
+    padding-left: 40px;
+}
+
+/* ----------- introduce 第三格 ----------- */
+.two-3{
+    background-position: right -280px bottom 0;
+}
+
+.two-3-text{
+    padding-top: 300px;
+    margin-left: 40px;
+    padding-top: 400px;
+}
+
+.two-3-text h1{
+    -webkit-text-stroke: 1px rgb(255, 255, 255) ;
+    font-size: 60px;
+}
+
+.two-3-text h2{
+    font-size: 18px;
+}
+
+/* ----------- introduce 第四格 ----------- */
+.right_block{
+    right: 5px;
+    top: 650px;
+}
+
+#scroll_block::-webkit-scrollbar{
+    display: none;
+}
+
+.right_block .list{
+    /* border: 3px solid red; */
+    width: 370px;
+    flex-direction: row;
+}
+
+.right_block .list li{
+    margin-left: 10px;
+}
+
+.right_block a.link{
+    width: 100px;
+    height: 5px;
+}
+
+#left1{
+    background-image: 
+    url(../img/Function/04.jpg),
+    linear-gradient(270deg, rgba(0, 0, 0, 0) 20%, rgba(255, 255, 255, 0) 90%);
+    width: 100vw;
+    background-size: cover, cover;
+    background-position: left -300px bottom 0, left bottom;
+}
+
+#left2{
+    background-image: 
+    url(../img/Function/05.jpg),
+    linear-gradient(270deg, rgba(0, 0, 0, 0) 20%, rgba(255, 255, 255, 0) 90%);
+    width: 100vw;
+    background-size: cover, cover;
+    background-position: left -600px bottom 0, left bottom;
+}
+
+#left3{
+    background-image: 
+    url(../img/Function/06.jpg),
+    linear-gradient(270deg, rgba(0, 0, 0, 0) 20%, rgba(255, 255, 255, 0) 90%);
+    width: 100vw;
+    background-size: cover, cover;
+    background-position: left -300px bottom 0, left bottom;
+}
+
+.two-4-text{
+    padding-top: 320px;
+    text-align: center;
+}
+
+.two-4-text h1{
+    -webkit-text-stroke: 1px rgb(255, 255, 255) ;
+    font-size: 60px;
+}
+
+.two-4-text h2{
+    font-size: 18px;
+}
+
+/* ----------- introduce 第五格 ----------- */
+.ccc{
+    height: 400px;
+    margin-bottom: 0;
+}
+
+.two-5-text h1{
+    margin-top: 70px;
+    -webkit-text-stroke: 1.5px rgba(0, 0, 0, 0.4);
+    -webkit-text-fill-color: transparent;
+    color: rgb(217, 217, 217);
+    font-size: 50px;
+    position: absolute;
+    left: 30px;
+}
+
+.two-5-img{
+    top: 100px;
+}
+
+.two-5-img img{
+    max-width: 90%;
+}
+
+.two-5-img li{
+    width: 70px;
+    height: 70px;
+}
+
+.two-5-function ul{
+    margin-top: 0;
+}
+
+
+
+.two-5-function li{
+    /* border: 3px solid red; */
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.two-5-function li i{
+    font-size: 25px;
+    line-height: 50px;
+}
+
+.two-5-img li:nth-child(1){
+    border: 2px solid white;
+    top: 30px;
+    right: 50px;
+    display: none;
+}
+
+.two-5-img li:nth-child(2){
+    border: 2px solid white;
+    top: 20px;
+    left: 150px;
+    display: none;
+}
+
+.two-5-img li:nth-child(3){
+    border: 2px solid white;
+    top: 50px;
+    left: 80px;
+    display: none;
+}
+
+.two-5-img li:nth-child(4){
+    border: 2px solid white;
+    top: 30px;
+    right: 120px;
+    display: none;
+}
+
+.two-5-img li:nth-child(5){
+    border: 2px solid white;
+    top: 50px;
+    left: 150px;
+    display: none;
+}
+
+/* ----------- introduce 第六格 ----------- */
+.six{
+    height: 550px;
+}
+
+.six-text{
+    padding-top: 50px;
+}
+
+.six-text p{
+    max-width: 85%;
+    margin: 20px auto;
+    line-height: 1.6;
+}
+
+.tabs_list{
+    gap: 5px;
+}
+
+.tabs_list h3{
+    font-size: 14px;
+}
+
+.tabs_item:nth-child(1)::before{
+    transition: .5s;
+}
+
+.tabs_item:nth-child(1).tab2::before{
+    left: 107px;
+}
+
+.tabs_item:nth-child(1).tab3::before{
+    left: 217px;
+}
+
+.tabs_btn{
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+.tabs_content{
+    height: 190px;
+}
+
+.tabs_content p{
+    width: 70%;
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.tabs_content img{
+    max-width: 90%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* ----------- introduce 第六格下面按鈕 ----------- */
+.six-button{
+    width: 100vw;
+    margin: 0 auto;
+    height: 70px;
+    margin-top: 100px;
+}
+
+.six-button h2{
+    font-size: 16px;
+}
+
+.six-inside-button{
+    margin-left: 0;
+}
+
+.six-inside-button a{
+    margin-left: 15px;
+    width: 90px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.six-inside-button h2{
+    font-size: 13px;
+}
+
+/* ----------- introduce 第七格 ----------- */
+.seven{
+    display: none;
+}
+
+/* ----------- introduce back to top ----------- */
+.back-to-top{
+    width: 30px;
+    right: 15px;
+    bottom: 15px;
+}
+
 }

@@ -16,16 +16,6 @@ $(document).ready(function(){
 });
 
 // ------- 換顏色 ------
-// let build_img = document.getElementsByClassName('build-img');
-// let color_btn = document.getElementsByClassName('color-btn');
-// let text = document.getElementsByClassName('text');
-// let Head = document.getElementsByClassName('build-car-plus-head');
-
-// console.log(text);
-// console.log(text[7]);
-
-
-
 $(function(){
     // $('.build-car-plus-head').click(function(){
         // let Text = $(this).closest('.build-car-plus-text');
@@ -49,3 +39,31 @@ $(function(){
     });
 
 // });
+
+
+//------ mobile ------
+let viewport = $(window).width();
+
+//------ 漢堡線click後出現選單 ------
+
+let burger = false; //關閉時
+
+$(window).on('load', function(){
+    if(viewport <= 414){
+        $('.burger').click(function(){
+            if( burger == false ) {
+                $('.burger').addClass('open'),
+                $('.burger').addClass('openbutton'),
+                $('.nav_el').slideToggle();
+                burger = true;
+            }else{
+                $('.burger').removeClass('open'),
+                $('.burger').removeClass('openbutton'),
+                $('.nav_el').slideToggle();
+
+                burger = false;
+            }
+        });
+    }
+});
+
