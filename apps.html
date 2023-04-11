@@ -21,14 +21,8 @@
         <nav class="topbar"></nav>
 
         <div class="apps-inside-two">
-            <h1>Fastest 科技購</h1>
-        <div class="apps-title-one">
-            <img src="img/logo/03.svg" alt="">
-        <div class="apps-title-two">
-            <img src="img/logo/01.svg" alt="">
-            <img src="img/logo/02.svg" alt="">
-        </div>
-        </div>
+            <h2>Fastest® 7.5智慧系統</h2>
+            <h1>您的終極駕駛伴侶</h1>
         </div>
     </div>
 
@@ -72,11 +66,45 @@
         </ul>
 
         <div class="slider_arrow">
-            <div class="slider_prev">prev</div>
-            <div class="slider_next">next</div>
+            <div class="slider_prev"><i class="bi bi-arrow-left-short"></i></div>
+            <div class="slider_next"><i class="bi bi-arrow-right-short"></i></div>
         </div>
     </div>
     </div>
+
+    <!----------- apps safe ----------->
+    <div class="apps_safe_wrapper">
+        <div class="apps_safe">
+            <h2 class="safe_h2">更安全，防護不嫌多</h2>
+            <ul>
+                <li>
+                    <div class="blur_img">
+                        <i class="bi bi-car-front"></i>
+                        <img src="img/backgroundimg/09.jpg" alt="">
+                    </div>
+                    <h2>智能駕駛輔助</h2>
+                    <p>車道偏移警示和自動煞車等，增強您的駕駛安全性和便利性</p>
+                </li>
+                <li>
+                    <div class="blur_img">
+                        <i class="bi bi-gear-wide-connected"></i>
+                        <img src="img/backgroundimg/10.jpg" alt="">
+                    </div>
+                    <h2>行車紀錄器</h2>
+                    <p>透過連接車輛攝影機，幫助您紀錄行車過程中的重要畫面和事故情況</p>
+                </li>
+                <li>
+                    <div class="blur_img">
+                        <i class="bi bi-speedometer"></i>
+                        <img src="img/backgroundimg/11.jpg" alt="">
+                    </div>
+                    <h2>加油站查詢</h2>
+                    <p>顯示油價和距離等詳細資訊</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
     <!----------- apps QA ----------->
     <div class="apps-qa-wrapper">
     <div class="apps-qa-in">
@@ -93,7 +121,7 @@
             <li>
                 <div class="apps-qa-text">
                     <div class="apps-qa-head">
-                        <h2><span class="big-text">Q</span>這個汽車APP是否需要付費使用？</h2>
+                        <h2>這個汽車APP是否需要付費使用？</h2>
                     </div>
                     <div class="apps-qa-content">
                         <p>大部分汽車APP都是免費的，但也有一些提供付費服務或功能，如專業的汽車保養和維修建議、車輛故障診斷。</p>
@@ -103,7 +131,7 @@
             <li>
                 <div class="apps-qa-text">
                     <div class="apps-qa-head">
-                        <h2><span class="big-text">Q</span>這個汽車APP是否支持所有的車型？</h2>
+                        <h2>這個汽車APP是否支持所有的車型？</h2>
                     </div>
                     <div class="apps-qa-content">
                         <p>不是所有汽車APP都支持所有的車型，一些特定品牌或型號的車輛可能會有限制。在使用汽車APP前，建議先確認該APP是否支持您所擁有的車型。</p>
@@ -113,7 +141,7 @@
             <li>
                 <div class="apps-qa-text">
                     <div class="apps-qa-head">
-                        <h2><span class="big-text">Q</span>如何查詢汽車保養和維修資訊？</h2>
+                        <h2>如何查詢汽車保養和維修資訊？</h2>
                     </div>
                     <div class="apps-qa-content">
                         <p>使用者可以在汽車APP中輸入車輛的品牌、型號、年份等基本信息，並選擇相應的保養或維修項目，APP會自動列出相關的建議和指引。</p>
@@ -123,7 +151,7 @@
             <li>
                 <div class="apps-qa-text">
                     <div class="apps-qa-head">
-                        <h2><span class="big-text">Q</span>如何查詢汽車促銷和二手車交易信息？</h2>
+                        <h2>如何查詢汽車促銷和二手車交易信息？</h2>
                     </div>
                     <div class="apps-qa-content">
                         <p>大多數汽車APP都會提供最新的汽車促銷和二手車交易信息，使用者可以在APP中選擇相應的區域和車型，查詢詳細的信息和價格。</p>
@@ -133,7 +161,7 @@
             <li>
                 <div class="apps-qa-text">
                     <div class="apps-qa-head">
-                        <h2><span class="big-text">Q</span>如何查詢汽車保險和註冊資訊？</h2>
+                        <h2>如何查詢汽車保險和註冊資訊？</h2>
                     </div>
                     <div class="apps-qa-content">
                         <p>一些汽車APP也會提供汽車保險和註冊等相關資訊，使用者可以在APP中輸入車輛的基本信息，查詢相應的保險和註冊流程。</p>
@@ -144,18 +172,21 @@
     </div>
     </div>
     </div>
+
     <!----------- apps back to top ----------->
     <a href="#top" class="back-to-top"><img src="img/logo/backtotop.svg" alt=""></a>   
 
 
     <!----------- apps footer ----------->
+    <div class="footer"></div>
+
 
     <script src="js/apps.js"></script>
 
     <script>
     $(function(){
         $('.topbar').load('default.html .topbar');
-        // $('.footer').load('default.html .footer');
+        $('.footer').load('default.html .footer');
     });
     </script>
 

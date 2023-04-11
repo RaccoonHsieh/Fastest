@@ -8,9 +8,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="shortcut icon" href="img/logo/Fastest_logo.ico" type="image/x-icon">    
+    <link rel="shortcut icon" href="img/logo/Fastest_logo.ico" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">    
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/produce.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <title>Fastest 生活精品</title>
 </head>
@@ -39,6 +41,10 @@
 
 
     <!----------- produce card ----------->
+    <div data-aos="fade-up"
+        data-aos-offset="500"
+        data-aos-duration="1000">
+
     <div class="produce-card-inside">
         
         <div class="produce-card">
@@ -138,7 +144,7 @@
             </ul>
         </div>
     </div>
-
+</div>
     <!----------- produce button ----------->
     <div class="produce-button-inside">
         <div class="produce-button">
@@ -161,13 +167,14 @@
     <!----------- produce footer ----------->
     <div class="footer"></div>
     
+    <script src="js/produce.js"></script>
     <script>
         $(function(){
+            AOS.init();
             $('.topbar').load('default.html .topbar');
             $('.footer').load('default.html .footer');
         });
     </script>
 
-    <script src="js/produce.js"></script>
 </body>   
 </html>

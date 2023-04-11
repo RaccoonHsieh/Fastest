@@ -236,8 +236,7 @@ p{
 /* ----------- mobile topbar ----------- */
 .topbar{
     background-color: #ffffff;
-    height: 70px;
-}
+    height: 70px;}
 
 .topbar_el{
     justify-content: flex-start;
@@ -252,6 +251,7 @@ p{
 }
 
 .nav_el{
+    position: fixed;
     position: absolute;
     background-color: #e6e6e6;
     z-index: 99;

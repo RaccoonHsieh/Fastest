@@ -9,25 +9,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="shortcut icon" href="img/logo/Fastest_logo.ico" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/introduce.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <title>Fastest 車款介紹</title>
 </head>
 <body>
     <div id="top"></div>
     <!----------- introduce topbar banner ----------->
-    <!-- <div class="two_cover"></div> -->
-
     <div class="two">
         <nav class="topbar"></nav>
-
     <div class="title-2">
         <h2>FASTEST</h2>
         <h1>ZONE</h1>
     </div>
     </div>
-    
+
     <!----------- introduce 第一格下面按鈕 ----------->
 
     <div class="one-button">
@@ -40,6 +39,10 @@
     </div>
 
     <!----------- introduce 第二格 ----------->
+    <div data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="300">
+
     <div class="two-2">
         <div class="two-two">
         <div class="two-2-icon">
@@ -48,8 +51,12 @@
         </div>
     </div>
     </div>
+    </div>
 
     <!----------- introduce 第三格 ----------->
+    <div data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="300">
 
     <div class="two-3">
     <div class="aaa">
@@ -66,8 +73,13 @@
         </div>
     </div>
     </div>
+    </div>
 
     <!----------- introduce 第四格 ----------->
+    <div data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="300">
+
     <div class="parent_block">
 
         <div class="right_block">
@@ -87,19 +99,19 @@
         </div>
         <div class="left_block" id="left2" data-id="link2">
             <div class="two-4-text">
-                <h1>INTERIOR-2</h1>
-                <h2>採用最先進的工程學原理</h2>
+                <h1>INTERIOR</h1>
+                <h2>採用最先進的工程學原理<br>提供最優質的坐姿支撐和減震效果</h2>
             </div>
         </div>
         <div class="left_block" id="left3" data-id="link3">
             <div class="two-4-text">
-                <h1>INTERIOR-3</h1>
-                <h2>採用最先進的工程學理，提供</h2>
+                <h1>INTERIOR</h1>
+                <h2>採用最先進的工程學原理<br>提供最優質的坐姿支撐和減震效果</h2>
             </div>
         </div>
         </div>
         </div>
-                
+    </div>            
     <!----------- introduce 第五格 ----------->
 
     <div class="two-5">
@@ -121,11 +133,26 @@
                 </div>
         <div class="two-5-function">
             <ul>
-                <li class="btn_img"><i class="bi bi-ev-front-fill" id="one"></i></li>
-                <li class="btn_img"><i class="bi bi-ev-front-fill" id="two"></i></li>
-                <li class="btn_img"><i class="bi bi-ev-front-fill" id="three"></i></li>
-                <li class="btn_img"><i class="bi bi-ev-front-fill" id="four"></i></li>
-                <li class="btn_img"><i class="bi bi-ev-front-fill" id="five"></i></li>
+                <li class="btn_img">
+                    <i class="bi bi-ev-front-fill" id="one"></i>
+                    <h2>空調系統</h2>
+                </li>
+                <li class="btn_img">
+                    <i class="bi bi-gear-wide-connected" id="two"></i>
+                    <h2>變速系統</h2>
+                </li>
+                <li class="btn_img">
+                    <i class="bi bi-hypnotize" id="three"></i>
+                    <h2>懸掛系統</h2>
+                </li>
+                <li class="btn_img">
+                    <i class="bi bi-speedometer" id="four"></i>
+                    <h2>煞車系統</h2>
+                </li>
+                <li class="btn_img">
+                    <i class="bi bi-nut-fill" id="five"></i>
+                    <h2>燃油系統</h2>
+                </li>
             </ul>
         </div>
         </div>
@@ -201,14 +228,13 @@
     <!----------- introduce back to top ----------->
     <a href="#top" class="back-to-top"><img src="img/logo/backtotop.svg" alt=""></a>   
 
-
-
+    <script src="js/introduce.js"></script>
     <script>
         $(function(){
+            AOS.init();
             $('.topbar').load('default.html .topbar');
         });  
     </script>
-    <script src="js/introduce.js"></script>
 
 
 </body>

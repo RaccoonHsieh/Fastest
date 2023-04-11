@@ -312,6 +312,7 @@ a.back-to-top{
 }
 
 .prod1{
+    /* padding-left: 450px; */
     margin-top: 60px;
     overflow-y: hidden;
 }

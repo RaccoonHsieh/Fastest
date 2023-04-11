@@ -47,10 +47,19 @@ let index_last = 0;
 $(window).on('load', function(){
     $('.btn_img').click(function(){
         let Img_el_Index = $(this).index();
+        $('.btn_img h2').eq(Img_el_Index).fadeIn();
+        $('.btn_img').eq(Img_el_Index).attr('style', 'border: 1.5px solid rgb(208, 208, 208)');
+        $('.btn_img i').eq(Img_el_Index).attr('style', 'color: rgb(208, 208, 208)');
 
         if(index_last != Img_el_Index){
             $('.img_el').eq(index_last).fadeOut();
             $('.img_el').eq(Img_el_Index).fadeIn();
+            $('.btn_img h2').eq(Img_el_Index).fadeIn();
+            $('.btn_img h2').eq(index_last).fadeOut();
+            $('.btn_img').eq(Img_el_Index).attr('style', 'border: 1.5px solid rgb(208, 208, 208)');
+            $('.btn_img i').eq(Img_el_Index).attr('style', 'color: rgb(208, 208, 208)');
+            $('.btn_img').eq(index_last).attr('style', 'border: 1.5px solid rgb(45, 179, 255)');
+            $('.btn_img i').eq(index_last).attr('style', 'color: rgb(45, 179, 255)');
         }else{
             $('.img_el').eq(Img_el_Index).fadeIn();
         }
